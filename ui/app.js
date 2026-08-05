@@ -12,6 +12,11 @@ const SITE = 'https://zavodsvay.ru';
 const REGION_NAMES = { '11108': 'Пермский край', 'all': 'Вся Россия' };
 const DEVICE_NAMES = { 'desktop': 'Десктоп', 'mobile': 'Мобильные' };
 
+// Оффсеты позиционных колонок — как в SerpWatcher (0=сегодня)
+const POS_OFFSETS = [0, 1, 2, 3, 4, 5, 6, 14, 30, 180];
+const POS_LABELS = { 0: 'Сегодня', 1: 'Вчера', 2: '2д', 3: '3д', 4: '4д', 5: '5д', 6: '6д', 14: 'Неделя', 30: 'Месяц', 180: 'Полгода' };
+const COL_CLASS = { 2: 'col-p2', 3: 'col-p3', 4: 'col-p4', 5: 'col-p5', 6: 'col-p6', 14: 'col-p14', 30: 'col-p30', 180: 'col-p180' };
+
 const state = {
   region: '11108',
   device: 'desktop',
@@ -19,7 +24,7 @@ const state = {
   type: '',
   priority: '',
   onlyFound: false,
-  sortKey: 'pos',
+  sortKey: 'p0',
   sortDir: 1,
 };
 
@@ -47,10 +52,27 @@ function fmtCtr(v) {
   if (v == null || isNaN(v)) return '—';
   return v.toFixed(1) + '%';
 }
+function dayStr(offset) {
+  const d = new Date();
+  d.setDate(d.getDate() - offset);
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${d.getFullYear()}-${m}-${day}`;
+}
+function posAt(page, offset) {
+  if (!page) return null;
+  const v = page[dayStr(offset)];
+  return v && v.position != null ? v.position : null;
+}
 function esc(s) {
   return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   }[c]));
+}
+const TYPE_SHORT = { 'коммерческий': 'комм.', 'информационный': 'инфо', 'локальный': 'лок.' };
+const TYPE_CLASS = { 'коммерческий': 'q-kom', 'информационный': 'q-info', 'локальный': 'q-lok' };
+function typeShort(t) {
+  return TYPE_SHORT[t] || t;
 }
 
 /* ─── Загрузка данных ───────────────────────────────────────────────────── */
@@ -63,7 +85,7 @@ async function load() {
   } catch (e) {
     $('statusChip').className = 'status-chip error';
     $('statusChip').textContent = 'данные не найдены';
-    $('tbody').innerHTML = '<tr><td colspan="10"><div class="empty-state">' +
+    $('tbody').innerHTML = '<tr><td colspan="14"><div class="empty-state">' +
       '<div class="title">Файл данных не найден</div>' +
       'Запустите <code>python scripts/webmaster_monitor.py</code>, затем сервер:<br>' +
       '<code>python serve_ui.py</code></div></td></tr>';
@@ -77,31 +99,14 @@ function buildSlice() {
   const out = [];
   for (const q of (DATA.queries || [])) {
     const regs = q['регионы'] || {};
-    const sliceData = (regs[reg] || {})[dev] || {};
-    const pages = sliceData; // { url: { date: {position, impressions, clicks, ctr} } }
+    const pages = (regs[reg] || {})[dev] || {};
     const tKey = targetUrl(q['приёмник']);
 
-    let page = pages[tKey];
-    if (!page) page = {};
+    const page = pages[tKey] || {};
     const dates = Object.keys(page).sort();
-    const latestWith = field => {
-      for (let i = dates.length - 1; i >= 0; i--) {
-        if (page[dates[i]][field] != null) return page[dates[i]][field];
-      }
-      return null;
-    };
-    const posToday = latestWith('position');
+    const positions = POS_OFFSETS.map(o => posAt(page, o));
 
-    // вчера: последняя дата с позицией, раньше самой свежей даты с позицией
-    let posPrev = null;
-    if (dates.length > 0) {
-      const lastDate = dates[dates.length - 1];
-      for (let i = dates.length - 2; i >= 0; i--) {
-        if (page[dates[i]].position != null) { posPrev = page[dates[i]].position; break; }
-      }
-    }
-
-    // показы/клики/CTR — сумма/среднее за окно
+    // показы/клики/CTR — сумма/среднее за окно (для деталей)
     let imp = 0, clicks = 0, ctrSum = 0, ctrN = 0;
     for (const d of dates) {
       const s = page[d];
@@ -110,23 +115,26 @@ function buildSlice() {
       if (s.ctr != null) { ctrSum += s.ctr; ctrN++; }
     }
 
-    // серия позиций для спарклайна (только приёмник)
-    const series = dates.map(d => ({ date: d, pos: page[d].position })).filter(p => p.pos != null);
+    // серия для спарклайна (последние 14 дней приёмника)
+    const cutoff = dayStr(14);
+    const series = dates.filter(d => d >= cutoff)
+      .map(d => ({ date: d, pos: page[d].position }))
+      .filter(p => p.pos != null);
 
     const otherPages = Object.keys(pages)
       .filter(u => u !== tKey)
       .map(u => ({ url: u, data: pages[u] }));
 
     out.push({
-      q, pages, tKey, dates,
-      page, posToday, posPrev,
-      delta: posToday != null && posPrev != null ? posToday - posPrev : null,
+      q, pages, tKey, dates, page, positions,
+      posToday: positions[0],
+      delta: positions[0] != null && positions[1] != null ? positions[0] - positions[1] : null,
       imp, clicks,
       ctr: ctrN ? ctrSum / ctrN : null,
       series, otherPages,
       inSerp: Object.keys(pages).length > 0,
-      targetRanks: posToday != null,
-      wrongPage: Object.keys(pages).length > 0 && posToday == null,
+      targetRanks: positions[0] != null,
+      wrongPage: Object.keys(pages).length > 0 && positions[0] == null,
     });
   }
   slice = out;
@@ -139,14 +147,11 @@ const SORT_GET = {
   type: r => r.q['тип'],
   priority: r => ({ high: 0, med: 1, low: 2 }[r.q['приоритет']] ?? 9),
   freq: r => parseInt(r.q['частота'] || '0') || 0,
-  pos: r => r.posToday,
-  delta: r => r.delta,
-  impressions: r => r.imp,
-  clicks: r => r.clicks,
-  ctr: r => r.ctr,
   spark: r => r.posToday,
+  delta: r => r.delta,
 };
-const NULLS_LAST = ['pos', 'delta', 'ctr', 'impressions', 'clicks'];
+POS_OFFSETS.forEach(o => { SORT_GET['p' + o] = r => r.positions[POS_OFFSETS.indexOf(o)]; });
+const NULLS_LAST = ['p0', 'p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p14', 'p30', 'p180', 'delta'];
 
 function filtered() {
   const q = state.search.trim().toLowerCase();
@@ -196,14 +201,19 @@ function renderKpis(rows) {
     <div class="kpi"><div class="kpi-label">Без данных</div><div class="kpi-value">${all - inSerp}</div></div>`;
 }
 
-function posCell(r) {
-  const p = r.posToday;
-  const cell = `<td class="num clickable"><span class="pos ${p == null ? 'none' : ''}">${p == null ? '—' : p}</span>`;
-  if (r.wrongPage) {
-    const top = r.otherPages.map(o => bestPos(o.data)).filter(Boolean).sort((a, b) => a - b)[0];
-    cell += `<div class="warn-note" title="Приёмник ${r.q['приёмник']} не ранжируется">другая стр. ${top != null ? '· ' + top : ''}</div>`;
+function posCell(r, offset) {
+  const p = r.positions[POS_OFFSETS.indexOf(offset)];
+  const cls = COL_CLASS[offset] ? ` class="num col-${COL_CLASS[offset].slice(4)}"` : ' class="num"';
+  let cell = `<td${cls}><span class="pos ${p == null ? 'none' : ''}">${p == null ? '—' : p}</span></td>`;
+  if (offset === 0) {
+    cell = `<td${cls}><span class="pos ${p == null ? 'none' : ''}">${p == null ? '—' : p}</span>`;
+    if (r.wrongPage) {
+      const top = r.otherPages.map(o => bestPos(o.data)).filter(Boolean).sort((a, b) => a - b)[0];
+      cell += `<div class="warn-note" title="Приёмник ${r.q['приёмник']} не ранжируется">другая стр. ${top != null ? '· ' + top : ''}</div>`;
+    }
+    cell += '</td>';
   }
-  return cell + '</td>';
+  return cell;
 }
 function bestPos(data) {
   const dates = Object.keys(data).sort();
@@ -241,23 +251,20 @@ function renderTable() {
   renderKpis(rows);
   const tb = $('tbody');
   if (!rows.length) {
-    tb.innerHTML = '<tr><td colspan="10"><div class="empty-state">Ничего не найдено по фильтрам</div></td></tr>';
+    tb.innerHTML = '<tr><td colspan="14"><div class="empty-state">Ничего не найдено по фильтрам</div></td></tr>';
     return;
   }
   tb.innerHTML = rows.map((r, i) => {
     const p = r.q['приоритет'];
+    const qCls = [TYPE_CLASS[r.q['тип']] || 'q-kom', 'p-' + p].filter(Boolean).join(' ');
+    const tip = `${esc(r.q['тип'])} · ${esc(r.q['приоритет'])}`;
     return `<tr class="${i % 2 ? 'stripe' : ''}" data-text="${esc(r.q['text'])}">
-      <td class="clickable"><span class="q-main">${esc(r.q['text'])}
+      <td class="clickable"><span class="q-main ${qCls}" title="${tip}">${esc(r.q['text'])}
         <span class="landing">${esc(r.q['приёмник'])}</span></span></td>
-      <td><span class="badge ${r.q['тип']}">${esc(r.q['тип'])}</span></td>
-      <td><span class="badge ${p}">${esc(p)}</span></td>
       <td class="num col-freq">${fmtNum(r.q['частота'])}</td>
-      ${posCell(r)}
+      ${POS_OFFSETS.map(o => posCell(r, o)).join('')}
       ${deltaCell(r)}
-      <td class="num col-imp">${r.imp ? fmtNum(r.imp) : '—'}</td>
-      <td class="num col-clicks">${r.clicks ? fmtNum(r.clicks) : '—'}</td>
-      <td class="num col-ctr">${fmtCtr(r.ctr)}</td>
-      <td>${sparkSvg(r.series)}</td>
+      <td class="num col-spark">${sparkSvg(r.series)}</td>
     </tr>`;
   }).join('');
 
@@ -286,7 +293,7 @@ function openDetail(row) {
   const q = row.q;
   $('dText').textContent = q['text'];
   const meta = [
-    `<span class="badge ${q['тип']}">${esc(q['тип'])}</span>`,
+    `<span class="badge ${q['тип']}" title="${esc(q['тип'])}">${esc(typeShort(q['тип']))}</span>`,
     `<span class="badge ${q['приоритет']}">${esc(q['приоритет'])}</span>`,
     q['частота'] ? `частота: <b>${fmtNum(q['частота'])}</b>` : '',
     `приёмник: <b>${esc(q['приёмник'])}</b>`,
@@ -296,10 +303,13 @@ function openDetail(row) {
 
   const body = $('dBody');
 
-  // График позиции приёмника
+  // График позиции приёмника — вся накопленная история
+  const fullSeries = row.dates
+    .map(d => ({ date: d, pos: row.page[d].position }))
+    .filter(p => p.pos != null);
   let chartHtml = '';
-  if (row.series.length) {
-    chartHtml = `<div class="section-title">Позиция приёмника · 14 дней</div>
+  if (fullSeries.length) {
+    chartHtml = `<div class="section-title">Позиция приёмника · вся история</div>
       <div class="chart-box"><div id="dChart"></div></div>`;
   }
 
@@ -338,8 +348,8 @@ function openDetail(row) {
 
   body.innerHTML = chartHtml + attackHtml;
 
-  if (row.series.length) {
-    renderDetailChart(row.series);
+  if (fullSeries.length) {
+    renderDetailChart(fullSeries);
   }
 
   $('detailBackdrop').hidden = false;
@@ -353,12 +363,17 @@ function renderDetailChart(series) {
   const xs = series.map(p => new Date(p.date + 'T12:00:00').getTime());
   const ys = series.map(p => p.pos);
   const maxPos = Math.max(50, ...ys);
+  const w = Math.min(720, Math.max(400, series.length * 16));
   detailChart = new uPlot({
-    width: 660, height: 240,
+    width: w, height: 260,
     legend: { show: true },
     scales: { y: { range: () => [maxPos, 1] } },
     axes: [
-      { stroke: 'var(--text-3)', grid: { stroke: 'var(--border)' } },
+      { stroke: 'var(--text-3)', grid: { stroke: 'var(--border)' },
+        values: (u, vals) => vals.map(v => {
+          const d = new Date(v);
+          return d.toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit' });
+        }) },
       {
         stroke: 'var(--text-3)', grid: { stroke: 'var(--border)' },
         values: (u, vals) => vals.map(v => v + ''),

@@ -6,13 +6,9 @@
 регионы) × устройство (desktop / mobile_and_tablet). Позиции — реальные
 данные поиска Яндекса, в отличие от Search API (другой поток ранжирования).
 
-Данные: data/webmaster/data.json — скользящее окно 14 дней (лимит API),
-upsert по (запрос, регион, устройство, URL, дата).
-
-Использование:
-  python scripts/webmaster_monitor.py                                  # полный сбор
-  python scripts/webmaster_monitor.py --query "винтовые сваи пермь"    # один запрос
-  python scripts/webmaster_monitor.py --regions 11108,all --devices desktop,mobile
+Данные: data/webmaster/data.json — аккумуляция истории (API отдаёт окно
+14 дней, прогоны сливаются по (запрос, регион, устройство, URL, дата);
+значения за ту же дату перезаписываются свежим ответом — дата финальна).
 """
 import argparse
 import csv
@@ -22,7 +18,6 @@ import sys
 import time
 import urllib.error
 import urllib.request
-from datetime import date, timedelta
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CORE_PATH = os.path.join(ROOT, 'data', 'core', 'core.csv')
@@ -35,7 +30,6 @@ REGION_ALL = 'all'         # без region_ids — все регионы
 
 DEVICE_MAP = {'desktop': 'DESKTOP', 'mobile': 'MOBILE_AND_TABLET'}
 
-WINDOW_DAYS = 14
 REQUEST_DELAY = 0.25
 MAX_ATTEMPTS = 3
 
@@ -137,14 +131,8 @@ def normalize_url(url: str) -> str:
 
 
 def prune(queries: list[dict], window: int) -> None:
-    cutoff = (date.today() - timedelta(days=window)).isoformat()
-    for q in queries:
-        for reg in q.get('регионы', {}).values():
-            for dev in reg.values():
-                for url in list(dev.keys()):
-                    dev[url] = {d: v for d, v in dev[url].items() if d >= cutoff}
-                    if not dev[url]:
-                        del dev[url]
+    """Устаревшая функция — история аккумулируется, ничего не вырезаем."""
+    return
 
 
 def main() -> None:
@@ -152,7 +140,6 @@ def main() -> None:
     ap.add_argument('--query', default=None, help='собрать только один запрос')
     ap.add_argument('--regions', default='11108,all')
     ap.add_argument('--devices', default='desktop,mobile')
-    ap.add_argument('--window', type=int, default=WINDOW_DAYS)
     args = ap.parse_args()
 
     token = load_token()
@@ -209,10 +196,14 @@ def main() -> None:
                 pages = parse_stats(raw)
                 if not pages:
                     empty_responses += 1
-                # API отдаёт полное окно 14 дней — срез заменяем целиком,
-                # а не мержим (иначе устаревшие данные переживают прогоны)
+                # Аккумуляция: API отдаёт окно 14 дней, история сливается.
+                # Значения за ту же дату перезаписываются свежим ответом.
                 reg_entry = entry['регионы'].setdefault(reg, {})
-                reg_entry[device] = {normalize_url(u): d for u, d in pages.items()}
+                dev_entry = reg_entry.setdefault(device, {})
+                for url, day_stats in pages.items():
+                    u = normalize_url(url)
+                    for d, fields in day_stats.items():
+                        dev_entry.setdefault(u, {}).setdefault(d, {}).update(fields)
                 time.sleep(REQUEST_DELAY)
         if args.query:
             print(json.dumps(entry, ensure_ascii=False, indent=1)[:3000])
@@ -226,7 +217,6 @@ def main() -> None:
     else:
         data['status'] = 'ok'
 
-    prune(data['queries'], args.window)
     with open(DATA_PATH, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
 

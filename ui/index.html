@@ -44,8 +44,6 @@
   <span class="label">Тема</span>
   <select id="themeSelect" class="select">
     <option value="light">Светлая</option>
-    <option value="dark">Тёмная</option>
-    <option value="terminal">Терминал</option>
     <option value="shtil">Штиль</option>
   </select>
   <span class="label">Шрифт</span>
@@ -87,15 +85,19 @@
     <thead>
       <tr>
         <th data-sort="text">Запрос</th>
-        <th data-sort="type">Тип</th>
-        <th data-sort="priority">Приоритет</th>
         <th data-sort="freq" class="num col-freq">Частота</th>
-        <th data-sort="pos" class="num">Позиция</th>
+        <th data-sort="p0" class="num">Сегодня</th>
+        <th data-sort="p1" class="num">Вчера</th>
+        <th data-sort="p2" class="num col-p2">2д</th>
+        <th data-sort="p3" class="num col-p3">3д</th>
+        <th data-sort="p4" class="num col-p4">4д</th>
+        <th data-sort="p5" class="num col-p5">5д</th>
+        <th data-sort="p6" class="num col-p6">6д</th>
+        <th data-sort="p14" class="num col-p14">Неделя</th>
+        <th data-sort="p30" class="num col-p30">Месяц</th>
+        <th data-sort="p180" class="num col-p180">Полгода</th>
         <th data-sort="delta" class="num col-delta">Δ</th>
-        <th data-sort="impressions" class="num col-imp">Показы</th>
-        <th data-sort="clicks" class="num col-clicks">Клики</th>
-        <th data-sort="ctr" class="num col-ctr">CTR</th>
-        <th data-sort="spark" class="num">14 дней</th>
+        <th data-sort="spark" class="num col-spark">14 дней</th>
       </tr>
     </thead>
     <tbody id="tbody"></tbody>

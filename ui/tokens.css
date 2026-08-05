@@ -29,6 +29,11 @@
   --warn-soft: #fffbeb;
   --info:      #0891b2;
 
+  /* Цвета типа запроса (текст, читаемые на светлом фоне) */
+  --type-kom:  #1d4ed8;
+  --type-info: #065f46;
+  --type-lok:  #9a3412;
+
   /* ─── Типографика ─────────────────────────────────────────────────── */
   --font: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
   --fs-xs: 12px;   /* подписи, мета */
@@ -80,93 +85,6 @@
 }
 
 /* ─── Тёмная ───────────────────────────────────────────────────────────── */
-html[data-theme="dark"] {
-  --bg:            #0f1115;
-  --surface:       #171a1f;
-  --surface-2:     #1f232a;
-  --border:        #2a2f38;
-  --border-strong: #3a414d;
-
-  --text:   #e5e7eb;
-  --text-2: #9aa3ad;
-  --text-3: #6b7280;
-
-  --accent:      #60a5fa;
-  --accent-soft: #1e293b;
-  --accent-text: #0b1220;
-
-  --good:      #4ade80;
-  --good-soft: #12291a;
-  --bad:       #f87171;
-  --bad-soft:  #2d1515;
-  --warn:      #fbbf24;
-  --warn-soft: #2d2410;
-  --info:      #22d3ee;
-
-  --shadow-s: 0 1px 2px rgb(0 0 0 / .4);
-  --shadow-m: 0 2px 10px rgb(0 0 0 / .5);
-
-  --badge-commercial-bg: #1e2a4a;  --badge-commercial-text: #93b4ff;
-  --badge-info-bg:       #12352a;  --badge-info-text:       #6ee7b7;
-  --badge-local-bg:      #3a2a10;  --badge-local-text:      #fdba74;
-  --badge-high-bg: #3d1a1a; --badge-high-text: #fca5a5;
-  --badge-med-bg:  #3d2e10; --badge-med-text:  #fcd34d;
-  --badge-low-bg:  #23272e; --badge-low-text:  #9aa3ad;
-
-  --table-head-bg:   #1c2027;
-  --table-row-hover: #1a1e24;
-  --table-stripe:    #191d23;
-
-  --input-bg: #171a1f;
-  --control-hover: #23282f;
-  --seg-active-bg: #23282f;
-  --seg-active-shadow: 0 1px 2px rgb(0 0 0 / .4);
-}
-
-/* ─── Терминал (тёмный, зелёный) ──────────────────────────────────────── */
-html[data-theme="terminal"] {
-  --bg:            #0b120b;
-  --surface:       #111a11;
-  --surface-2:     #182318;
-  --border:        #263526;
-  --border-strong: #334733;
-
-  --text:   #cfe8cf;
-  --text-2: #8fb08f;
-  --text-3: #5f7a5f;
-
-  --accent:      #4ade80;
-  --accent-soft: #14301b;
-  --accent-text: #0b120b;
-
-  --good:      #86efac;
-  --good-soft: #14301b;
-  --bad:       #f87171;
-  --bad-soft:  #2d1515;
-  --warn:      #fbbf24;
-  --warn-soft: #2d2410;
-  --info:      #22d3ee;
-
-  --shadow-s: 0 1px 2px rgb(0 0 0 / .5);
-  --shadow-m: 0 2px 10px rgb(0 0 0 / .6);
-
-  --badge-commercial-bg: #123019;  --badge-commercial-text: #6ee7b7;
-  --badge-info-bg:       #12291a;  --badge-info-text:       #a7f3d0;
-  --badge-local-bg:      #2d2410;  --badge-local-text:      #fcd34d;
-  --badge-high-bg: #3d1a1a; --badge-high-text: #fca5a5;
-  --badge-med-bg:  #3d2e10; --badge-med-text:  #fcd34d;
-  --badge-low-bg:  #1a231a; --badge-low-text:  #8fb08f;
-
-  --table-head-bg:   #16221a;
-  --table-row-hover: #152015;
-  --table-stripe:    #131c13;
-
-  --input-bg: #111a11;
-  --control-hover: #1c2a1c;
-  --seg-active-bg: #1c2a1c;
-  --seg-active-shadow: 0 1px 2px rgb(0 0 0 / .5);
-}
-
 /* ─── Штиль (светлый, холодный) ───────────────────────────────────────── */
 html[data-theme="shtil"] {
   --bg:            #eef2f6;
@@ -197,6 +115,10 @@ html[data-theme="shtil"] {
   --badge-high-bg: #fbecec; --badge-high-text: #b03a3c;
   --badge-med-bg:  #fdf3e7; --badge-med-text:  #92400e;
   --badge-low-bg:  #e8edf2; --badge-low-text:  #52657a;
+
+  --type-kom:  #155e75;
+  --type-info: #0e6440;
+  --type-lok:  #92400e;
 
   --table-head-bg:   #e8edf2;
   --table-row-hover: #f7fafc;

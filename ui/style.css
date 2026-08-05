@@ -200,7 +200,7 @@ table.queries {
   border: 1px solid var(--border);
   border-radius: var(--r-m);
   overflow: hidden;
-  font-size: var(--fs-s);
+  font-size: var(--fs-m);
   box-shadow: var(--shadow-s);
 }
 table.queries thead th {
@@ -208,7 +208,7 @@ table.queries thead th {
   padding: var(--sp-2) var(--sp-3);
   text-align: left;
   font-weight: var(--fw-m);
-  font-size: var(--fs-xs);
+  font-size: var(--fs-s);
   color: var(--text-2);
   letter-spacing: .02em;
   white-space: nowrap;
@@ -216,6 +216,7 @@ table.queries thead th {
   cursor: pointer;
   user-select: none;
 }
+table.queries th[data-sort="text"] { width: 24%; }
 table.queries thead th:hover { color: var(--text); }
 table.queries thead th.sorted { color: var(--accent); }
 table.queries thead th .arrow { margin-left: 4px; }
@@ -232,18 +233,34 @@ table.queries td {
 table.queries td.num { text-align: right; font-variant-numeric: tabular-nums; }
 table.queries td.clickable { cursor: pointer; }
 
-/* Ячейка «запрос» */
-.q-main { font-weight: var(--fw-m); }
+table.queries td:first-child { overflow: hidden; }
+
+/* Ячейка «запрос» — цвет по типу */
+.q-main {
+  display: block;
+  font-weight: var(--fw-m);
+  font-size: var(--fs-l);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .q-main .landing {
   display: block;
   font-size: var(--fs-xs);
   font-weight: var(--fw-s);
   color: var(--text-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .q-main .warn-note { color: var(--warn); font-size: var(--fs-xs); }
+.q-main.q-kom  { color: #1e3a8a; }
+.q-main.q-info { color: var(--type-info); }
+.q-main.q-lok  { color: var(--type-lok); }
+.q-main .landing { color: var(--text-3); opacity: 1; }
 
 /* Позиция */
-.pos { font-weight: var(--fw-b); font-variant-numeric: tabular-nums; }
+.pos { font-weight: var(--fw-b); font-size: var(--fs-l); font-variant-numeric: tabular-nums; }
 .pos.good { color: var(--good); }
 .pos.bad  { color: var(--bad); }
 .pos.none { color: var(--text-3); font-weight: var(--fw-s); }
@@ -438,15 +455,15 @@ table.days tr:last-child td { border-bottom: 0; }
 }
 .btn.ghost:hover { color: var(--text); background: var(--control-hover); }
 
-/* ─── Адаптивность ─────────────────────────────────────────────────────── */
-@media (max-width: 1200px) {
-  .col-ctr, .col-clicks { display: none; }
-}
-@media (max-width: 960px) {
-  .col-freq, .col-delta { display: none; }
-}
+/* ─── Адаптивность: позиционные колонки 1д…полгода ─────────────────────── */
+@media (max-width: 1700px) { .col-p180 { display: none; } }
+@media (max-width: 1500px) { .col-p30 { display: none; } }
+@media (max-width: 1360px) { .col-p14 { display: none; } }
+@media (max-width: 1200px) { .col-p5, .col-p6, .col-spark { display: none; } }
+@media (max-width: 1000px) { .col-p3, .col-p4, .col-freq { display: none; } }
+@media (max-width: 800px)  { .col-p2, .col-delta { display: none; } }
+
 @media (max-width: 760px) {
-  .col-imp { display: none; }
   .app-header h1 { font-size: var(--fs-l); }
   .app-header .sub { display: none; }
   .kpis { grid-template-columns: repeat(2, 1fr); }
@@ -462,4 +479,5 @@ table.days tr:last-child td { border-bottom: 0; }
   .kpis { grid-template-columns: 1fr; }
   .controls { gap: var(--sp-2); }
   .seg button { padding: 5px 10px; }
+  .col-p1 { display: none; }
 }
