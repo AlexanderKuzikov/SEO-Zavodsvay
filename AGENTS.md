@@ -3,6 +3,10 @@
 ## Commands
 - normalize-wordstat: `python scripts/normalize_wordstat.py`
 - gen-serpwatcher: `python scripts/gen_serpwatcher.py`
+- build-core: `python scripts/build_core.py`
+- webmaster-baseline: `python scripts/webmaster_baseline.py`
+- webmaster-monitor: `python scripts/webmaster_monitor.py` (ежедневно 07:00 по Task Scheduler)
+- serve-ui: `python serve_ui.py` (http://127.0.0.1:8794/ui/)
 - audit-snapshot: ручной прогон аудита сайта, результат → `audits/seo-{YYYY-MM-DD}.json`
 
 ## Conventions

@@ -1,0 +1,213 @@
+/* ============================================================================
+   design tokens — стандартная схема интерфейсов
+   Темы: data-theme="light|dark|terminal|shtil", шрифты: data-font,
+   масштаб: data-scale. Реализация: ui/tokens.css, документация —
+   knowledge/design-tokens.md. Переменные менять нельзя — только значения.
+   ========================================================================== */
+
+:root {
+  /* ─── Палитра (светлая по умолчанию) ───────────────────────────────── */
+  --bg:            #f6f7f9;
+  --surface:       #ffffff;
+  --surface-2:     #f1f3f5;
+  --border:        #e3e6ea;
+  --border-strong: #d0d5db;
+
+  --text:   #1a1d21;
+  --text-2: #5c6570;
+  --text-3: #9aa3ad;
+
+  --accent:      #2563eb;
+  --accent-soft: #e8effd;
+  --accent-text: #ffffff;
+
+  --good:      #16a34a;
+  --good-soft: #ecfdf5;
+  --bad:       #dc2626;
+  --bad-soft:  #fef2f2;
+  --warn:      #d97706;
+  --warn-soft: #fffbeb;
+  --info:      #0891b2;
+
+  /* ─── Типографика ─────────────────────────────────────────────────── */
+  --font: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fs-xs: 12px;   /* подписи, мета */
+  --fs-s:  13px;   /* вторичное */
+  --fs-m:  14px;   /* базовый */
+  --fs-l:  16px;   /* заголовки секций */
+  --fs-xl: 20px;   /* заголовок страницы */
+  --lh: 1.45;
+  --fw-s: 400;
+  --fw-m: 500;
+  --fw-b: 600;
+
+  /* ─── Геометрия ───────────────────────────────────────────────────── */
+  --r-s: 6px;
+  --r-m: 8px;
+  --r-l: 12px;
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+
+  --shadow-s: 0 1px 2px rgb(0 0 0 / .05);
+  --shadow-m: 0 2px 10px rgb(0 0 0 / .08);
+
+  /* ─── Бейджи типов запросов ───────────────────────────────────────── */
+  --badge-commercial-bg: #e8effd;  --badge-commercial-text: #1d4ed8;
+  --badge-info-bg:       #ecfdf5;  --badge-info-text:       #047857;
+  --badge-local-bg:      #fff7ed;  --badge-local-text:      #c2410c;
+
+  /* ─── Бейджи приоритетов ──────────────────────────────────────────── */
+  --badge-high-bg: #fef2f2; --badge-high-text: #b91c1c;
+  --badge-med-bg:  #fffbeb; --badge-med-text:  #b45309;
+  --badge-low-bg:  #f1f3f5; --badge-low-text:  #5c6570;
+
+  /* ─── Таблица ─────────────────────────────────────────────────────── */
+  --table-head-bg:  #f1f3f5;
+  --table-row-hover: #f8fafc;
+  --table-stripe:   #fafbfc;
+
+  /* ─── Контролы ────────────────────────────────────────────────────── */
+  --input-bg: #ffffff;
+  --input-border: var(--border-strong);
+  --control-hover: #f1f3f5;
+  --seg-active-bg: #ffffff;
+  --seg-active-shadow: var(--shadow-s);
+}
+
+/* ─── Тёмная ───────────────────────────────────────────────────────────── */
+html[data-theme="dark"] {
+  --bg:            #0f1115;
+  --surface:       #171a1f;
+  --surface-2:     #1f232a;
+  --border:        #2a2f38;
+  --border-strong: #3a414d;
+
+  --text:   #e5e7eb;
+  --text-2: #9aa3ad;
+  --text-3: #6b7280;
+
+  --accent:      #60a5fa;
+  --accent-soft: #1e293b;
+  --accent-text: #0b1220;
+
+  --good:      #4ade80;
+  --good-soft: #12291a;
+  --bad:       #f87171;
+  --bad-soft:  #2d1515;
+  --warn:      #fbbf24;
+  --warn-soft: #2d2410;
+  --info:      #22d3ee;
+
+  --shadow-s: 0 1px 2px rgb(0 0 0 / .4);
+  --shadow-m: 0 2px 10px rgb(0 0 0 / .5);
+
+  --badge-commercial-bg: #1e2a4a;  --badge-commercial-text: #93b4ff;
+  --badge-info-bg:       #12352a;  --badge-info-text:       #6ee7b7;
+  --badge-local-bg:      #3a2a10;  --badge-local-text:      #fdba74;
+  --badge-high-bg: #3d1a1a; --badge-high-text: #fca5a5;
+  --badge-med-bg:  #3d2e10; --badge-med-text:  #fcd34d;
+  --badge-low-bg:  #23272e; --badge-low-text:  #9aa3ad;
+
+  --table-head-bg:   #1c2027;
+  --table-row-hover: #1a1e24;
+  --table-stripe:    #191d23;
+
+  --input-bg: #171a1f;
+  --control-hover: #23282f;
+  --seg-active-bg: #23282f;
+  --seg-active-shadow: 0 1px 2px rgb(0 0 0 / .4);
+}
+
+/* ─── Терминал (тёмный, зелёный) ──────────────────────────────────────── */
+html[data-theme="terminal"] {
+  --bg:            #0b120b;
+  --surface:       #111a11;
+  --surface-2:     #182318;
+  --border:        #263526;
+  --border-strong: #334733;
+
+  --text:   #cfe8cf;
+  --text-2: #8fb08f;
+  --text-3: #5f7a5f;
+
+  --accent:      #4ade80;
+  --accent-soft: #14301b;
+  --accent-text: #0b120b;
+
+  --good:      #86efac;
+  --good-soft: #14301b;
+  --bad:       #f87171;
+  --bad-soft:  #2d1515;
+  --warn:      #fbbf24;
+  --warn-soft: #2d2410;
+  --info:      #22d3ee;
+
+  --shadow-s: 0 1px 2px rgb(0 0 0 / .5);
+  --shadow-m: 0 2px 10px rgb(0 0 0 / .6);
+
+  --badge-commercial-bg: #123019;  --badge-commercial-text: #6ee7b7;
+  --badge-info-bg:       #12291a;  --badge-info-text:       #a7f3d0;
+  --badge-local-bg:      #2d2410;  --badge-local-text:      #fcd34d;
+  --badge-high-bg: #3d1a1a; --badge-high-text: #fca5a5;
+  --badge-med-bg:  #3d2e10; --badge-med-text:  #fcd34d;
+  --badge-low-bg:  #1a231a; --badge-low-text:  #8fb08f;
+
+  --table-head-bg:   #16221a;
+  --table-row-hover: #152015;
+  --table-stripe:    #131c13;
+
+  --input-bg: #111a11;
+  --control-hover: #1c2a1c;
+  --seg-active-bg: #1c2a1c;
+  --seg-active-shadow: 0 1px 2px rgb(0 0 0 / .5);
+}
+
+/* ─── Штиль (светлый, холодный) ───────────────────────────────────────── */
+html[data-theme="shtil"] {
+  --bg:            #eef2f6;
+  --surface:       #ffffff;
+  --surface-2:     #e8edf2;
+  --border:        #d5dde5;
+  --border-strong: #bcc8d4;
+
+  --text:   #20303f;
+  --text-2: #52657a;
+  --text-3: #8ca0b3;
+
+  --accent:      #0e7490;
+  --accent-soft: #e0f2f7;
+  --accent-text: #ffffff;
+
+  --good:      #0f9d58;
+  --good-soft: #e6f6ee;
+  --bad:       #d9484a;
+  --bad-soft:  #fbecec;
+  --warn:      #b45309;
+  --warn-soft: #fdf3e7;
+  --info:      #0891b2;
+
+  --badge-commercial-bg: #e0f2f7;  --badge-commercial-text: #155e75;
+  --badge-info-bg:       #e6f6ee;  --badge-info-text:       #0f7a4d;
+  --badge-local-bg:      #fdf3e7;  --badge-local-text:      #92400e;
+  --badge-high-bg: #fbecec; --badge-high-text: #b03a3c;
+  --badge-med-bg:  #fdf3e7; --badge-med-text:  #92400e;
+  --badge-low-bg:  #e8edf2; --badge-low-text:  #52657a;
+
+  --table-head-bg:   #e8edf2;
+  --table-row-hover: #f7fafc;
+  --table-stripe:    #f3f7fa;
+}
+
+/* ─── Шрифтовые схемы ─────────────────────────────────────────────────── */
+html[data-font="grotesk"] { --font: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; }
+html[data-font="mono"]    { --font: "Cascadia Mono", Consolas, "JetBrains Mono", "Courier New", monospace; }
+html[data-font="antiqua"] { --font: Georgia, "Times New Roman", serif; }
+
+/* ─── Масштаб ──────────────────────────────────────────────────────────── */
+html[data-scale="s"] { --fs-xs: 11px; --fs-s: 12px; --fs-m: 13px; --fs-l: 15px; --fs-xl: 18px; }
+html[data-scale="l"] { --fs-xs: 13px; --fs-s: 14px; --fs-m: 16px; --fs-l: 18px; --fs-xl: 24px; }

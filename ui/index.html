@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вебмастер · позиции zavodsvay.ru</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="libs/uPlot.min.css">
+<script>
+/* Темы/шрифты/масштаб до отрисовки — без мигания */
+(function () {
+  var t = localStorage.getItem('wm-theme');
+  if (t) document.documentElement.setAttribute('data-theme', t);
+  var f = localStorage.getItem('wm-font');
+  if (f) document.documentElement.setAttribute('data-font', f);
+  var s = localStorage.getItem('wm-scale');
+  if (s) document.documentElement.setAttribute('data-scale', s);
+})();
+</script>
+</head>
+<body>
+
+<header class="app-header">
+  <h1>Вебмастер · позиции zavodsvay.ru</h1>
+  <span class="sub">реальные данные поиска Яндекса</span>
+  <div class="spacer"></div>
+  <span id="statusChip" class="status-chip">загрузка…</span>
+  <button id="reload" class="select" title="Перезагрузить данные">⟳</button>
+</header>
+
+<div class="controls">
+  <span class="label">Регион</span>
+  <div class="seg" id="regionSeg">
+    <button data-region="11108" class="active">Пермский край</button>
+    <button data-region="all">Вся Россия</button>
+  </div>
+  <span class="label">Устройство</span>
+  <div class="seg" id="deviceSeg">
+    <button data-device="desktop" class="active">Десктоп</button>
+    <button data-device="mobile">Мобильные</button>
+  </div>
+  <div class="spacer"></div>
+  <span class="label">Тема</span>
+  <select id="themeSelect" class="select">
+    <option value="light">Светлая</option>
+    <option value="dark">Тёмная</option>
+    <option value="terminal">Терминал</option>
+    <option value="shtil">Штиль</option>
+  </select>
+  <span class="label">Шрифт</span>
+  <select id="fontSelect" class="select">
+    <option value="grotesk">Гротеск</option>
+    <option value="mono">Моно</option>
+    <option value="antiqua">Антиква</option>
+  </select>
+  <span class="label">Размер</span>
+  <select id="scaleSelect" class="select">
+    <option value="s">Мелкий</option>
+    <option value="m">Средний</option>
+    <option value="l">Крупный</option>
+  </select>
+  <button id="collectBtn" class="btn">⟳ Собрать сейчас</button>
+</div>
+
+<div class="controls controls-2">
+  <div class="search"><input id="search" type="text" placeholder="Поиск по запросу…"></div>
+  <select id="typeFilter" class="select">
+    <option value="">Все типы</option>
+    <option value="коммерческий">Коммерческие</option>
+    <option value="информационный">Инфо</option>
+    <option value="локальный">Локальные</option>
+  </select>
+  <select id="priorityFilter" class="select">
+    <option value="">Все приоритеты</option>
+    <option value="high">High</option>
+    <option value="med">Med</option>
+    <option value="low">Low</option>
+  </select>
+  <label class="check"><input id="onlyFound" type="checkbox"> только в выдаче</label>
+</div>
+
+<div class="kpis" id="kpis"></div>
+
+<div class="table-wrap">
+  <table class="queries" id="queriesTable">
+    <thead>
+      <tr>
+        <th data-sort="text">Запрос</th>
+        <th data-sort="type">Тип</th>
+        <th data-sort="priority">Приоритет</th>
+        <th data-sort="freq" class="num col-freq">Частота</th>
+        <th data-sort="pos" class="num">Позиция</th>
+        <th data-sort="delta" class="num col-delta">Δ</th>
+        <th data-sort="impressions" class="num col-imp">Показы</th>
+        <th data-sort="clicks" class="num col-clicks">Клики</th>
+        <th data-sort="ctr" class="num col-ctr">CTR</th>
+        <th data-sort="spark" class="num">14 дней</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+<div class="app-footer" id="footer"></div>
+
+<!-- Деталь запроса -->
+<div id="detailBackdrop" class="detail-backdrop" hidden></div>
+<aside id="detail" class="detail" aria-hidden="true">
+  <div class="detail-head">
+    <div>
+      <div class="q-text" id="dText"></div>
+      <div class="q-meta" id="dMeta"></div>
+    </div>
+    <button id="dClose" class="close" title="Закрыть">×</button>
+  </div>
+  <div class="detail-body" id="dBody"></div>
+</aside>
+
+<script src="libs/uPlot.iife.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
