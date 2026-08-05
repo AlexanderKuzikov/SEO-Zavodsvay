@@ -12,6 +12,7 @@
 | Аудиты | baseline создан | `audits/seo-2026-08-05.json` — 6 findings (F-01…F-06), sitemap 567 URL, 529 объектов, 30 статей |
 | Вебмастер API | подключён | OAuth-токен в `.env` (gitignored), `scripts/webmaster_baseline.py` работает; `audits/webmaster-baseline-2026-08-05.json` — user_id 119294041, host verified. Данные запросов: HOST_NOT_LOADED (ждём первый обход) |
 | Связь с SerpWatcher | merged | 174 запроса в `data/projects.json` (все daily, region 50, freq из Wordstat) |
+| Яндекс.Метрика | подключена | счётчик **21639061** создан, код в `Zavodsvay-Static/partials/metrika.php`, вставлен в layouts home/main/wide (коммит 154b619, 2026-08-05 06:53). Осталось включить «сбор данных для краулинга» в настройках счётчика |
 | Вебмастер-монитор | создан | `scripts/webmaster_monitor.py` (174 запроса × регион 11108/все × desktop/mobile, `data/webmaster/data.json`, **аккумуляция истории**) + UI `ui/` (vanilla + uPlot, 2 темы light/shtil × 3 шрифта × 3 масштаба, адаптивный, колонки частоты 1д…полгода) + `serve_ui.py` (8794, POST /api/collect + GET /api/status). Статус: `no-data` — ждём первый обход сайта (~1–2 дня). Автосбор: Task Scheduler «SEO-Zavodsvay\Webmaster Monitor» ежедневно 07:00 (uv python 3.11.15) |
 | GitHub | создан | https://github.com/AlexanderKuzikov/SEO-Zavodsvay, main, запушен |
 
@@ -19,10 +20,9 @@
 | # | Priority | Описание |
 |---|----------|----------|
 | 1 | high | Аудит зафиксирован: `audits/seo-2026-08-05.json` (F-01 28/29 статей без description, F-02 дубль title, F-03 title объектов 30–137 симв., F-04 `&quot;` в title, F-05 короткие title статей, F-06 crawl-delay 5.0). Чинить в Zavodsvay-Static: description/title в `partials/head-seo.php` + объектные страницы |
-| 2 | med | Ядро без частот: `core.csv` пока без колонки `частота` — дожен быть обогащён из Wordstat-выгрузок (скрипт normalize_wordstat.py) |
 | 3 | med | Wordstat «все регионы» — для регионального продвижения нужна выгрузка по региону 50 (Пермь): 43 запроса ядра (пермские + ВСГ) без частоты |
 | 4 | med | Вебмастер: sitemap добавлен через API (id 30a4d227), главная на переобходе (task 6779ef50). Повторить `webmaster_baseline.py` через ~24ч — ждём загрузку данных запросов |
-| 5 | low | Диагностика Вебмастера: `NO_METRIKA_COUNTER_CRAWL_ENABLED` — в Метрике не включён «сбор данных для краулинга» (настройка счётчика) |
+| 5 | low | Диагностика Вебмастера: `NO_METRIKA_COUNTER_CRAWL_ENABLED` — счётчик 21639061 создан и код вставлен, но в настройках счётчика не включён «сбор данных для краулинга» (тумблер в панели Метрики, код менять не нужно) |
 | 6 | med | Вебмастер-монитор: после первого обхода запустить `webmaster_monitor.py` повторно — ждём реальные позиции; автосбор настроен (Task Scheduler 07:00) |
 | 7 | low | UI: фаза 2 — discovery «запросы с показами вне ядра», фильтр направления B2B/B2C |
 
@@ -40,6 +40,16 @@
 | 2026-08-05 | Колонки «Тип»/«Приоритет» убраны из таблицы — запросы **размечаются цветом**: тип = цвет (комм. акцент/инфо зелёный/лок. оранжевый), приоритет = интенсивность (high жирный, med 0.8, low 0.5), полная инфа в tooltip. Фильтры по типу/приоритету остались. Текст тёмный, цвет — только оттенок (color-mix: 72% текстового цвета темы + 28% цвета типа) |
 | 2026-08-05 | **Финал UI (закрыл итерации по цвету)**: тёмные темы dark/terminal **удалены** (остались Светлая + Штиль; залипший `data-theme` в localStorage больше ни на что не влияет — стилей нет). Цвета типов зафиксированы: комм. `#1e3a8a` (хардкод, НЕ менять), инфо `#065f46`, лок. `#9a3412` (токены `--type-*`). Приоритет — только в tooltip, без opacity/веса. Колонка «Запрос» — 24% ширины, текст в одну строку (nowrap+ellipsis). Шрифт таблицы 14px, позиции 16px. ADR-004 |
 | 2026-08-05 | Фейковые тестовые данные из `data/webmaster/data.json` удалены — файл пересоздан чисто из ядра (174 запроса, пустые срезы, статус no-data). Реальные данные появятся после первого обхода Яндекса; коллектор аккумулирует историю начиная с первого прогона с данными |
+| 2026-08-05 | **Яндекс.Метрика** подключена (в Zavodsvay-Static): счётчик 21639061, `partials/metrika.php`, вставлен в layouts home/main/wide (коммит 154b619). В SEO-Zavodsvay — только статус в CONTEXT; код счётчика живёт в сайте |
+
+## План действий
+Приоритет → срок:
+1. **high** — чинить аудит F-01…F-06 в Zavodsvay-Static (`partials/head-seo.php` + объектные страницы): description/title статей, дубль title `/articles/` vs `/articles/vidy/`, title объектов ≤70 симв.
+2. **med ~24ч** — повторить `python scripts/webmaster_baseline.py` (после первого обхода Яндекса) → реальные данные запросов в Вебмастере
+3. **med ~24ч** — `python scripts/webmaster_monitor.py` повторно → ждём реальные позиции (автосбор 07:00 тоже сработает)
+4. **med** — выгрузка Wordstat по региону 50 (Пермь): 43 запроса ядра без частоты → обогатить ядро гео-частотами
+5. **low** — Метрика: включить «сбор данных для краулинга» в настройках счётчика 21639061 (панель Метрики, не код)
+6. **low** — UI фаза 2: discovery запросов с показами вне ядра, фильтр B2B/B2C
 
 ## Структура проекта
 ```
@@ -48,9 +58,13 @@ SEO-Zavodsvay/
 ├── AGENTS.md
 ├── data/
 │   ├── wordstat/          # сырые выгрузки Wordstat (по датам)
-│   └── core/              # семантическое ядро (SSOT: core.csv)
-├── audits/                # снимки аудитов сайта по датам
-├── scripts/               # Python: normalize_wordstat.py, gen_serpwatcher.py
+│   ├── core/              # семантическое ядро (SSOT: core.csv)
+│   └── webmaster/         # данные Вебмастер-монитора (data.json)
+├── audits/                # снимки аудитов сайта и Вебмастера по датам
+├── scripts/               # normalize_wordstat.py, gen_serpwatcher.py, build_core.py,
+│                          # webmaster_baseline.py, webmaster_monitor.py
+├── ui/                    # SPA Вебмастер-монитора (vanilla + uPlot)
+├── serve_ui.py            # веб-сервер UI (http://127.0.0.1:8794/ui/)
 └── docs/
     ├── CONTEXT.md
     └── DECISIONS.md
