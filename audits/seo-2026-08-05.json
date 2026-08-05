@@ -1,0 +1,1266 @@
+{
+  "generated": "2026-08-05T06:09:59",
+  "site": "https://zavodsvay.ru",
+  "robots": {
+    "status": 200,
+    "body": "User-agent: *\r\nAllow: /\r\nDisallow: /data/\r\nDisallow: /layouts/\r\nDisallow: /partials/\r\n\r\nUser-agent: Yandex\r\nAllow: /\r\nDisallow: /data/\r\nDisallow: /layouts/\r\nDisallow: /partials/\r\nCrawl-delay: 5.0\r\n\r\nUser-agent: Googlebot\r\nAllow: /\r\nDisallow: /data/\r\nDisallow: /layouts/\r\nDisallow: /partials/\r\n\r\nSitemap: https://zavodsvay.ru/sitemap.xml\r\n"
+  },
+  "sitemap": {
+    "status": 200,
+    "total_urls": 567,
+    "sections": {
+      "/": 1,
+      "catalog": 1,
+      "prices": 1,
+      "calc": 1,
+      "montage": 1,
+      "articles": 30,
+      "map": 1,
+      "contacts": 1,
+      "document": 1,
+      "objects": 529
+    }
+  },
+  "articles_count": 29,
+  "articles": [
+    {
+      "url": "https://zavodsvay.ru/articles/angar/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/angar/",
+      "title": "Фундамент для ангара на винтовых сваях — Гефест",
+      "description": "Свайно-винтовой фундамент для бескаркасных и каркасных ангаров: расчёт свай, схемы расстановки, полевые испытания и сравнение стоимости с ленточным фундаментом.",
+      "robots": null,
+      "h1": [
+        "Фундамент для ангара на винтовых сваях"
+      ],
+      "h2_count": 5,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 825
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/arenda-yamobura/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/arenda-yamobura/",
+      "title": "Аренда ямобура — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Аренда ямобура"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 550
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/bania/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/bania/",
+      "title": "Сваи для бани — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Фундамент для бани на винтовых сваях"
+      ],
+      "h2_count": 4,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 767
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/beton/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/beton/",
+      "title": "Сваи и бетон — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Бетонирование винтовой сваи"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 610
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/brevno/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/brevno/",
+      "title": "Сваи для бревенчатого дома — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Фундамент для дома из бревна на винтовых сваях"
+      ],
+      "h2_count": 4,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 774
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/brus/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/brus/",
+      "title": "Сваи для дома из бруса — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Фундамент для дома из бруса на винтовых сваях"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 678
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/dostavka-svay/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/dostavka-svay/",
+      "title": "Доставка свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Доставка свай"
+      ],
+      "h2_count": 0,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 376
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/grunt/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/grunt/",
+      "title": "Сваи в сложных грунтах — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Несущая способность винтовых свай в разных типах грунтов"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1170
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/history/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/history/",
+      "title": "История винтовых свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "История винтовых свай"
+      ],
+      "h2_count": 5,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 861
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/ispytaniy/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/ispytaniy/",
+      "title": "Испытания свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Испытания винтовых свай"
+      ],
+      "h2_count": 1,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 743
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/karkasny/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/karkasny/",
+      "title": "Сваи для каркасного дома — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Фундамент для каркасного дома на винтовых сваях"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 578
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/mashin/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/mashin/",
+      "title": "Машины для завинчивания свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Машинный монтаж винтовых свай"
+      ],
+      "h2_count": 0,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1436
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/nakon/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/nakon/",
+      "title": "Наконечник винтовой сваи — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Сравнение винтовых свай со сварной и литой лопастью"
+      ],
+      "h2_count": 0,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1474
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/oshibki/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/oshibki/",
+      "title": "Ошибки при завинчивании свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Типичные ошибки при заказе фундамента на винтовых сваях"
+      ],
+      "h2_count": 0,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 796
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/otzyvy/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/otzyvy/",
+      "title": "Отзывы о сваях Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Негативные отзывы о винтовых сваях"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 677
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/penobeton/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/penobeton/",
+      "title": "Сваи для дома из пенобетона — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Фундамент для дома из пенобетона на винтовых сваях"
+      ],
+      "h2_count": 2,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 667
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/podpornaystena/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/podpornaystena/",
+      "title": "Подпорная стена на сваях — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Подпорные стены, пирсы и причалы на винтовых сваях"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 614
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/preimushestva/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/preimushestva/",
+      "title": "Преимущества винтовых свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Преимущества фундамента на винтовых сваях"
+      ],
+      "h2_count": 0,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1334
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/probnoe/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/probnoe/",
+      "title": "Пробное завинчивание — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Пробное завинчивание винтовой сваи"
+      ],
+      "h2_count": 2,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 765
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/raschet/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/raschet/",
+      "title": "Расчёт свайного фундамента — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Расчёт диаметра лопасти винтовой сваи при проектировании свайного поля"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 887
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/razmeshenie-svay/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/razmeshenie-svay/",
+      "title": "Размещение свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Размещение винтовых свай в фундаменте"
+      ],
+      "h2_count": 0,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 569
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/rostverk/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/rostverk/",
+      "title": "Ростверк на сваях — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Ростверк свайно-винтового фундамента"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 743
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/ruchnoy/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/ruchnoy/",
+      "title": "Ручное завинчивание свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Ручной монтаж фундамента на винтовых сваях"
+      ],
+      "h2_count": 0,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1509
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/sravnenie/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/sravnenie/",
+      "title": "Сравнение типов фундаментов — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Сравнение винтовой сваи ВСГ-1 89/300 и ВС-1 108/300"
+      ],
+      "h2_count": 3,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 776
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/stoimost-svay/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/stoimost-svay/",
+      "title": "Стоимость винтовых свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Цены на винтовые сваи"
+      ],
+      "h2_count": 1,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1034
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
+      "title": "Строительство фундамента — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Строительство фундамента"
+      ],
+      "h2_count": 0,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 375
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/tehnologiy/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/tehnologiy/",
+      "title": "Технология винтовых свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Технология строительства фундамента на винтовых свая"
+      ],
+      "h2_count": 0,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 859
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/vidy/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/vidy/",
+      "title": "Виды винтовых свай — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Виды винтовых свай"
+      ],
+      "h2_count": 4,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1162
+    },
+    {
+      "url": "https://zavodsvay.ru/articles/zima/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/articles/zima/",
+      "title": "Завинчивание свай зимой — Гефест",
+      "description": null,
+      "robots": null,
+      "h1": [
+        "Фундамент зимой на винтовых сваях"
+      ],
+      "h2_count": 4,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 888
+    }
+  ],
+  "pages_articles": {
+    "url": "https://zavodsvay.ru/articles/",
+    "status": 200,
+    "final_url": "https://zavodsvay.ru/articles/",
+    "title": "Виды винтовых свай — Гефест",
+    "description": "Обзор видов винтовых свай: однолопастные, многолопастные, с литой и сварной лопастью. Особенности применения каждого вида в строительстве.",
+    "robots": null,
+    "h1": [
+      "Полезные статьи о винтовых сваях"
+    ],
+    "h2_count": 12,
+    "images": 1,
+    "images_no_alt": 0,
+    "words": 771
+  },
+  "pages_vidy": {
+    "url": "https://zavodsvay.ru/articles/vidy/",
+    "status": 200,
+    "final_url": "https://zavodsvay.ru/articles/vidy/",
+    "title": "Виды винтовых свай — Гефест",
+    "description": null,
+    "robots": null,
+    "h1": [
+      "Виды винтовых свай"
+    ],
+    "h2_count": 4,
+    "images": 1,
+    "images_no_alt": 0,
+    "words": 1162
+  },
+  "object_pages": [
+    {
+      "url": "https://zavodsvay.ru/catalog/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/catalog/",
+      "title": "Каталог винтовых свай — Гефест",
+      "description": "Каталог винтовых свай от производителя. Все диаметры и длины. Доставка и монтаж.",
+      "robots": null,
+      "h1": [
+        "Каталог винтовых свай"
+      ],
+      "h2_count": 7,
+      "images": 6,
+      "images_no_alt": 0,
+      "words": 992
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/1/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/1/",
+      "title": "Арт объект «Космолёт», с. Молебка, Кишертский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Монтаж винтового фундамента для арт объекта «Космолёт». Свая ВСГ 60/200, длина 3000 мм.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Арт объект «Космолёт», с. Молебка, Кишертский район"
+      ],
+      "h2_count": 1,
+      "images": 7,
+      "images_no_alt": 0,
+      "words": 1434
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/10/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/10/",
+      "title": "СК «Мечта», г. Пермь, Свердловский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для дачного дома 5,38х5,38 м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "СК «Мечта», г. Пермь, Свердловский район"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1419
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/100/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/100/",
+      "title": "Сваи под фундамент дома, д. Большая Шадейка, Пермский край, Кунгурский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Сваи под фундамент 1,5 этажного дома 6х10,5м из оцилиндрованного бревна. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Сваи под фундамент дома, д. Большая Шадейка, Пермский край, Кунгурский район"
+      ],
+      "h2_count": 1,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1457
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/101/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/101/",
+      "title": "Винтовой фундамент для дома из бревна, п. Ново-Бродовский, г. Пермь — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для дома из бревна 9х9 м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовой фундамент для дома из бревна, п. Ново-Бродовский, г. Пермь"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1447
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/102/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/102/",
+      "title": "Бревенчатый дом, Село Змеевка, Частинский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для бревенчатого дома. Размеры: 9,45х8,85 м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Бревенчатый дом, Село Змеевка, Частинский район"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1424
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/103/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/103/",
+      "title": "Навес над бассейном, д. Красная Слудка, Добрянский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для навеса над бассейном.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Навес над бассейном, д. Красная Слудка, Добрянский район"
+      ],
+      "h2_count": 1,
+      "images": 4,
+      "images_no_alt": 0,
+      "words": 1428
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/104/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/104/",
+      "title": "Винтовой фундамент для каркасного дома, п. Протасы, Култаевсео сельское поселение — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: 14х14 м. Винтовой фундамент для каркасного дома.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовой фундамент для каркасного дома, п. Протасы, Култаевсео сельское поселение"
+      ],
+      "h2_count": 1,
+      "images": 2,
+      "images_no_alt": 0,
+      "words": 1442
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/105/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/105/",
+      "title": "Фундаменты для домов, Загородный поселок &amp;quot;Гаринские дачи&amp;quot; — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовые фундаменты для 4-х домов из бруса. Размеры: 2 дома 6х6 м, 2 дома 6х8 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Фундаменты для домов, Загородный поселок \"Гаринские дачи\""
+      ],
+      "h2_count": 1,
+      "images": 6,
+      "images_no_alt": 0,
+      "words": 1459
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/106/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/106/",
+      "title": "Винтовые фундаменты для двух домов из бруса, д. Петровка, район с. Нижние Муллы — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовые фундаменты для двух домов из бруса. Размеры объектов: 10,5х9 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовые фундаменты для двух домов из бруса, д. Петровка, район с. Нижние Муллы"
+      ],
+      "h2_count": 1,
+      "images": 4,
+      "images_no_alt": 0,
+      "words": 1470
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/107/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/107/",
+      "title": "Терраса, с. Троица, ул. Зелёная, 43 — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для террасы 6х2,5 м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Терраса, с. Троица, ул. Зелёная, 43"
+      ],
+      "h2_count": 1,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1416
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/108/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/108/",
+      "title": "Садовый дом, ст. Пальники, кооператив &amp;quot;Чайка&amp;quot; — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для садового дома 6х4 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Садовый дом, ст. Пальники, кооператив \"Чайка\""
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1418
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/109/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/109/",
+      "title": "Винтовой фундамент для беседки, г. Пермь, ул. Волегова, 21 — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для беседки 7,5х5,5 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовой фундамент для беседки, г. Пермь, ул. Волегова, 21"
+      ],
+      "h2_count": 1,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1430
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/11/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/11/",
+      "title": "Дом из бруса, п. Косотуриха, Пермский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент. Размеры: 8х10 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Дом из бруса, п. Косотуриха, Пермский район"
+      ],
+      "h2_count": 1,
+      "images": 4,
+      "images_no_alt": 0,
+      "words": 1421
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/110/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/110/",
+      "title": "Винтовой фундамент для бани, д. Мостовая, ул. Березовая, 5 — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для бани размером 7,45х6,45 м и мачты 4 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовой фундамент для бани, д. Мостовая, ул. Березовая, 5"
+      ],
+      "h2_count": 1,
+      "images": 4,
+      "images_no_alt": 0,
+      "words": 1450
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/111/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/111/",
+      "title": "Котельная на твердом топливе, с. Шулынды, Сивинский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Изготовление и монтаж котельной на твердом топливе, в тч винтовой фундамент. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Котельная на твердом топливе, с. Шулынды, Сивинский район"
+      ],
+      "h2_count": 1,
+      "images": 11,
+      "images_no_alt": 0,
+      "words": 1445
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/112/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/112/",
+      "title": "Винтовой фундамент для бани, д. Старый Посад, Верещагинского района — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для бани. Размеры: 4х4.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовой фундамент для бани, д. Старый Посад, Верещагинского района"
+      ],
+      "h2_count": 1,
+      "images": 2,
+      "images_no_alt": 0,
+      "words": 1431
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/113/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/113/",
+      "title": "Котельная, д. Пепеляева, Ильинский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Изготовление и монтаж котельной 3,8х7,6 м, в тч фундамент на винтовых сваях. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Котельная, д. Пепеляева, Ильинский район"
+      ],
+      "h2_count": 1,
+      "images": 7,
+      "images_no_alt": 0,
+      "words": 1427
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/114/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/114/",
+      "title": "Рыбацкие домики, Остров на р. Чусовая — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для 2-х рыбацких домиков. Размеры: 5,5х4,5 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Рыбацкие домики, Остров на р. Чусовая"
+      ],
+      "h2_count": 1,
+      "images": 1,
+      "images_no_alt": 0,
+      "words": 1417
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/115/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/115/",
+      "title": "Каркасный дом, д. Жебреи, СНТ &amp;quot;Громотуха&amp;quot; — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для каркасного дома 8х5. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Каркасный дом, д. Жебреи, СНТ \"Громотуха\""
+      ],
+      "h2_count": 1,
+      "images": 2,
+      "images_no_alt": 0,
+      "words": 1410
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/116/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/116/",
+      "title": "СНТ &amp;quot;Шемети-1&amp;quot;, Добрянский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для дома 7,2х8,4 м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "СНТ \"Шемети-1\", Добрянский район"
+      ],
+      "h2_count": 1,
+      "images": 2,
+      "images_no_alt": 0,
+      "words": 1398
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/117/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/117/",
+      "title": "Деревянный дом, с. Баш-Култаево — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для деревянного дома. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Деревянный дом, с. Баш-Култаево"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1398
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/118/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/118/",
+      "title": "Винтовой фундамент для дома, г. Пермь, ул. Костаревская, 24а — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для дома. Размеры: 14,2х7,4.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовой фундамент для дома, г. Пермь, ул. Костаревская, 24а"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1437
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/119/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/119/",
+      "title": "Фундамент на винтовых сваях и рама для гелиоколлектора, г. Пермь, ул. Генкеля, 4, территория ПГУ — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Изготовление фундамента на винтовых сваях и рамы для гелиоколлектора 1,8х12,8 м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Фундамент на винтовых сваях и рама для гелиоколлектора, г. Пермь, ул. Генкеля, 4, территория ПГУ"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1484
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/12/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/12/",
+      "title": "Испытания винтовых свай, г. Пермь, Мотовилихинский район, ул. 1905 года, 35, промзона — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Испытания винтовых свай на насыпном грунте (ПГС).. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Испытания винтовых свай, г. Пермь, Мотовилихинский район, ул. 1905 года, 35, промзона"
+      ],
+      "h2_count": 1,
+      "images": 7,
+      "images_no_alt": 0,
+      "words": 1454
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/120/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/120/",
+      "title": "Бревенчатый дом, Ласьвинские хутора, СНТ Мичуринец — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для бревенчатого дома 6,4х7,3м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Бревенчатый дом, Ласьвинские хутора, СНТ Мичуринец"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1421
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/121/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/121/",
+      "title": "Модульная котельная, с. Касиб, Соликамского района — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Изготовление фундамента на винтовых сваях для модульной котельной размером 3,8х6,0м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Модульная котельная, с. Касиб, Соликамского района"
+      ],
+      "h2_count": 1,
+      "images": 7,
+      "images_no_alt": 0,
+      "words": 1424
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/122/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/122/",
+      "title": "Бревенчатые дома, д. Зобачева, Ильинский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для 2-х бревенчатых домов 6х6м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Бревенчатые дома, д. Зобачева, Ильинский район"
+      ],
+      "h2_count": 1,
+      "images": 5,
+      "images_no_alt": 0,
+      "words": 1413
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/123/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/123/",
+      "title": "Каркасный дом, д. Шилово — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для каркасного дома. Размеры: 9х8 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Каркасный дом, д. Шилово"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1406
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/124/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/124/",
+      "title": "Бревенчатый дом, д. Пелени, Верещагинского района — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовые сваи. Размеры: 6х6.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Бревенчатый дом, д. Пелени, Верещагинского района"
+      ],
+      "h2_count": 1,
+      "images": 4,
+      "images_no_alt": 0,
+      "words": 1407
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/125/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/125/",
+      "title": "Модуль для котельной с фундаментом, д. Редькино, Октябрьского района — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Изготовление и монтаж фундамента на винтовых сваях и модуля для котельной 3,8х6м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Модуль для котельной с фундаментом, д. Редькино, Октябрьского района"
+      ],
+      "h2_count": 1,
+      "images": 5,
+      "images_no_alt": 0,
+      "words": 1452
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/126/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/126/",
+      "title": "Гимназия №2, фундамент для трибун школьного стадиона, ул. Старцева, 1а — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: 4,6х17 м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Гимназия №2, фундамент для трибун школьного стадиона, ул. Старцева, 1а"
+      ],
+      "h2_count": 1,
+      "images": 2,
+      "images_no_alt": 0,
+      "words": 1433
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/127/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/127/",
+      "title": "Винтовой фундамент для каркасного дома с мансардой, с. Култаево, ул. Кашина, 3а — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для каркасного дома с мансардой. Размеры 7х8.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовой фундамент для каркасного дома с мансардой, с. Култаево, ул. Кашина, 3а"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1463
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/128/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/128/",
+      "title": "Котельная для школы, с. Вторые Ключики, Ординского района — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Котельная на пеллетах с винтовым фундаментом. Размеры: 3,8х6 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Котельная для школы, с. Вторые Ключики, Ординского района"
+      ],
+      "h2_count": 1,
+      "images": 6,
+      "images_no_alt": 0,
+      "words": 1447
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/129/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/129/",
+      "title": "Винтовой фундамент для дома из оцилиндрованного бревна, д. Конец Гор, Краснослудское с/п, Добрянского района — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для дома из оцилиндрованного бревна. Размеры: 9х10 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовой фундамент для дома из оцилиндрованного бревна, д. Конец Гор, Краснослудское с/п, Добрянского района"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1480
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/13/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/13/",
+      "title": "Дом из газобетона / пенобетона, д.Мокино, Култаевское с/п — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Свая ВСГ-1 89/300, длина 2000 мм, количество 25 шт. Арматура ф 10 на сварку, бетонный ростверк.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Дом из газобетона / пенобетона, д.Мокино, Култаевское с/п"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1467
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/130/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/130/",
+      "title": "Винтовой фундамент для дома из СИП панелей, г. Чусовой, ул. Кощеева, 34 — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент для дома из СИП панелей. Размеры: 8х11 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Винтовой фундамент для дома из СИП панелей, г. Чусовой, ул. Кощеева, 34"
+      ],
+      "h2_count": 1,
+      "images": 4,
+      "images_no_alt": 0,
+      "words": 1467
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/131/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/131/",
+      "title": "База отдыха &amp;quot;Раздолье&amp;quot;, с. Троица — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовые сваи для фундаментов летних каркасных домов и благоустройства территории. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "База отдыха \"Раздолье\", с. Троица"
+      ],
+      "h2_count": 1,
+      "images": 4,
+      "images_no_alt": 0,
+      "words": 1424
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/132/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/132/",
+      "title": "Соломенный дом, с. Ильметово, Татышлинский район — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Винтовой фундамент. Размеры: 9х12 м.. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Соломенный дом, с. Ильметово, Татышлинский район"
+      ],
+      "h2_count": 1,
+      "images": 3,
+      "images_no_alt": 0,
+      "words": 1411
+    },
+    {
+      "url": "https://zavodsvay.ru/objects/133/",
+      "status": 200,
+      "final_url": "https://zavodsvay.ru/objects/133/",
+      "title": "Фундамент для телятника и коровника, с. Серафимовское, Сивинского района — Завод винтовых свай Гефест",
+      "description": "Выполненный объект: Фундамент для телятника 15х33 м, фундамент для коровника 12х40,5 м. Винтовые фундаменты от завода Гефест, г. Пермь.",
+      "robots": null,
+      "h1": [
+        "Фундамент для телятника и коровника, с. Серафимовское, Сивинского района"
+      ],
+      "h2_count": 1,
+      "images": 4,
+      "images_no_alt": 0,
+      "words": 1445
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "high",
+      "title": "28/29 статей без meta description",
+      "observation": "Только /articles/angar/ имеет meta description. 28 статей без него — поисковики сами вырезают сниппет из текста, контроль сниппета потерян.",
+      "falsifiability": "После правок: число статей без description в аудите = 0.",
+      "leading_indicator": "В Вебмастере сниппеты статей перестают переписываться.",
+      "urls": [
+        "https://zavodsvay.ru/articles/arenda-yamobura/",
+        "https://zavodsvay.ru/articles/bania/",
+        "https://zavodsvay.ru/articles/beton/",
+        "https://zavodsvay.ru/articles/brevno/",
+        "https://zavodsvay.ru/articles/brus/",
+        "https://zavodsvay.ru/articles/dostavka-svay/",
+        "https://zavodsvay.ru/articles/grunt/",
+        "https://zavodsvay.ru/articles/history/",
+        "https://zavodsvay.ru/articles/ispytaniy/",
+        "https://zavodsvay.ru/articles/karkasny/",
+        "https://zavodsvay.ru/articles/mashin/",
+        "https://zavodsvay.ru/articles/nakon/",
+        "https://zavodsvay.ru/articles/oshibki/",
+        "https://zavodsvay.ru/articles/otzyvy/",
+        "https://zavodsvay.ru/articles/penobeton/",
+        "https://zavodsvay.ru/articles/podpornaystena/",
+        "https://zavodsvay.ru/articles/preimushestva/",
+        "https://zavodsvay.ru/articles/probnoe/",
+        "https://zavodsvay.ru/articles/raschet/",
+        "https://zavodsvay.ru/articles/razmeshenie-svay/",
+        "https://zavodsvay.ru/articles/rostverk/",
+        "https://zavodsvay.ru/articles/ruchnoy/",
+        "https://zavodsvay.ru/articles/sravnenie/",
+        "https://zavodsvay.ru/articles/stoimost-svay/",
+        "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
+        "https://zavodsvay.ru/articles/tehnologiy/",
+        "https://zavodsvay.ru/articles/vidy/",
+        "https://zavodsvay.ru/articles/zima/"
+      ]
+    },
+    {
+      "id": "F-02",
+      "severity": "high",
+      "title": "Дубль title: /articles/ и /articles/vidy/",
+      "observation": "Обе страницы: «Виды винтовых свай — Гефест». Listing-страница и статья конкурируют за один запрос.",
+      "falsifiability": "После правок: title страниц различаются (проверка скриптом).",
+      "leading_indicator": "В выдаче по «виды винтовых свай» обе страницы перестают конкурировать.",
+      "urls": [
+        "https://zavodsvay.ru/articles/",
+        "https://zavodsvay.ru/articles/vidy/"
+      ]
+    },
+    {
+      "id": "F-03",
+      "severity": "high",
+      "title": "Title объектных страниц 30–137 симв., 33/40 > 70",
+      "observation": "Title склеен из «объект + география + город + «Фундамент на винтовых сваях» + название компании». Длинные title урезаются в выдаче (~60-70 симв.).",
+      "falsifiability": "После правок: max длина title объектов <= 70 (аудит).",
+      "leading_indicator": "CTR объектных страниц в Вебмастере растёт.",
+      "urls": [
+        "https://zavodsvay.ru/objects/1/",
+        "https://zavodsvay.ru/objects/100/",
+        "https://zavodsvay.ru/objects/101/",
+        "https://zavodsvay.ru/objects/102/",
+        "https://zavodsvay.ru/objects/103/",
+        "https://zavodsvay.ru/objects/104/",
+        "https://zavodsvay.ru/objects/105/",
+        "https://zavodsvay.ru/objects/106/",
+        "https://zavodsvay.ru/objects/108/",
+        "https://zavodsvay.ru/objects/109/",
+        "https://zavodsvay.ru/objects/11/",
+        "https://zavodsvay.ru/objects/110/",
+        "https://zavodsvay.ru/objects/111/",
+        "https://zavodsvay.ru/objects/112/",
+        "https://zavodsvay.ru/objects/115/",
+        "https://zavodsvay.ru/objects/116/",
+        "https://zavodsvay.ru/objects/118/",
+        "https://zavodsvay.ru/objects/119/",
+        "https://zavodsvay.ru/objects/12/",
+        "https://zavodsvay.ru/objects/120/",
+        "https://zavodsvay.ru/objects/121/",
+        "https://zavodsvay.ru/objects/122/",
+        "https://zavodsvay.ru/objects/124/",
+        "https://zavodsvay.ru/objects/125/",
+        "https://zavodsvay.ru/objects/126/",
+        "https://zavodsvay.ru/objects/127/",
+        "https://zavodsvay.ru/objects/128/",
+        "https://zavodsvay.ru/objects/129/",
+        "https://zavodsvay.ru/objects/13/",
+        "https://zavodsvay.ru/objects/130/",
+        "https://zavodsvay.ru/objects/131/",
+        "https://zavodsvay.ru/objects/132/",
+        "https://zavodsvay.ru/objects/133/"
+      ]
+    },
+    {
+      "id": "F-04",
+      "severity": "med",
+      "title": "Сущности &quot; не раскодированы в title",
+      "observation": "В title объектных страниц HTML-сущности &quot; отображаются как текст — мусор в сниппете.",
+      "falsifiability": "После правок: в title нет сущностей (аудит).",
+      "leading_indicator": "—",
+      "urls": []
+    },
+    {
+      "id": "F-05",
+      "severity": "med",
+      "title": "Title статей слишком короткие (21–47 симв.)",
+      "observation": "Большинство title статей 21–37 симв. — недобор по длине, не хватает уточнений и ключей.",
+      "falsifiability": "После правок: title статей 50–70 симв. (аудит).",
+      "leading_indicator": "Рост кликов по статьям в Вебмастере.",
+      "urls": [
+        "https://zavodsvay.ru/articles/angar/",
+        "https://zavodsvay.ru/articles/arenda-yamobura/",
+        "https://zavodsvay.ru/articles/bania/",
+        "https://zavodsvay.ru/articles/beton/",
+        "https://zavodsvay.ru/articles/brevno/",
+        "https://zavodsvay.ru/articles/brus/",
+        "https://zavodsvay.ru/articles/dostavka-svay/",
+        "https://zavodsvay.ru/articles/grunt/",
+        "https://zavodsvay.ru/articles/history/",
+        "https://zavodsvay.ru/articles/ispytaniy/",
+        "https://zavodsvay.ru/articles/karkasny/",
+        "https://zavodsvay.ru/articles/mashin/",
+        "https://zavodsvay.ru/articles/nakon/",
+        "https://zavodsvay.ru/articles/oshibki/",
+        "https://zavodsvay.ru/articles/otzyvy/",
+        "https://zavodsvay.ru/articles/penobeton/",
+        "https://zavodsvay.ru/articles/podpornaystena/",
+        "https://zavodsvay.ru/articles/preimushestva/",
+        "https://zavodsvay.ru/articles/probnoe/",
+        "https://zavodsvay.ru/articles/raschet/",
+        "https://zavodsvay.ru/articles/razmeshenie-svay/",
+        "https://zavodsvay.ru/articles/rostverk/",
+        "https://zavodsvay.ru/articles/ruchnoy/",
+        "https://zavodsvay.ru/articles/sravnenie/",
+        "https://zavodsvay.ru/articles/stoimost-svay/",
+        "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
+        "https://zavodsvay.ru/articles/tehnologiy/",
+        "https://zavodsvay.ru/articles/vidy/",
+        "https://zavodsvay.ru/articles/zima/"
+      ]
+    },
+    {
+      "id": "F-06",
+      "severity": "low",
+      "title": "robots.txt: crawl-delay 5.0 для Yandex",
+      "observation": "Crawl-delay 5.0 замедляет обход Яндекса в 5 раз. Для статического сайта не нужен.",
+      "falsifiability": "После правок: обход в Вебмастере ускоряется, crawl-delay удалён.",
+      "leading_indicator": "Рост страниц в индексе.",
+      "urls": [
+        "https://zavodsvay.ru/robots.txt"
+      ]
+    }
+  ],
+  "summary": {
+    "sitemap_urls": 567,
+    "articles_total": 29,
+    "articles_without_description": 28,
+    "articles_title_len_min": 21,
+    "articles_title_len_max": 47,
+    "object_pages_checked": 40,
+    "object_pages_title_gt_70": 33,
+    "object_pages_title_len_max": 137,
+    "duplicate_titles": [
+      {
+        "url1": "https://zavodsvay.ru/articles/",
+        "url2": "https://zavodsvay.ru/articles/vidy/",
+        "title": "Виды винтовых свай — Гефест"
+      }
+    ],
+    "robots_status": 200
+  }
+}
