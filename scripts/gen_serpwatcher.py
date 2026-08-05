@@ -16,6 +16,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CORE_PATH = os.path.join(ROOT, 'data', 'core', 'core.csv')
+SW_PROJECTS_PATH = os.path.join(ROOT, '..', 'SerpWatcher', 'data', 'projects.json')
 
 TAG_MAP = {
     'коммерческий': 'commercial',
@@ -37,10 +38,31 @@ def slugify(text: str) -> str:
     return re.sub(r'[^a-z0-9]+', '-', out).strip('-')
 
 
+def merge_into_projects(queries: list, project_id: str) -> int:
+    """Заменяет queries у проекта в SerpWatcher/data/projects.json, остальное не трогает."""
+    if not os.path.exists(SW_PROJECTS_PATH):
+        print(f'  {SW_PROJECTS_PATH} не найден — мерж пропущен')
+        return 0
+    with open(SW_PROJECTS_PATH, encoding='utf-8') as f:
+        data = json.load(f)
+    for p in data:
+        if isinstance(p, dict) and p.get('id') == project_id:
+            prev = len(p.get('queries', []))
+            p['queries'] = queries
+            with open(SW_PROJECTS_PATH, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+                f.write('\n')
+            return prev
+    print(f'  проект {project_id} не найден в projects.json — мерж пропущен')
+    return 0
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument('--project', default='zavodsvay')
     ap.add_argument('--out', default=None)
+    ap.add_argument('--merge', action='store_true',
+                    help='вписать queries в SerpWatcher/data/projects.json (проект --project)')
     args = ap.parse_args()
 
     with open(CORE_PATH, encoding='utf-8-sig') as f:
@@ -81,6 +103,10 @@ def main() -> None:
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(payload)
     print(f'{len(queries)} запросов -> {out_path}')
+
+    if args.merge:
+        prev = merge_into_projects(queries, args.project)
+        print(f'projects.json: запросов проекта {args.project}: {prev} -> {len(queries)}')
 
 
 if __name__ == '__main__':

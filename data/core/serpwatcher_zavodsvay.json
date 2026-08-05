@@ -1,5 +1,15 @@
 [
   {
+    "id": "svaynyy-fundament",
+    "text": "свайный фундамент",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 63214
+  },
+  {
     "id": "vintovye-svai-kupit",
     "text": "винтовые сваи купить",
     "tags": [
@@ -20,54 +30,6 @@
     "freq": 23504
   },
   {
-    "id": "vintovye-svai-perm",
-    "text": "винтовые сваи пермь",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/catalog/",
-    "checkFrequency": "daily",
-    "freq": 1255
-  },
-  {
-    "id": "kupit-vintovye-svai-v-permi",
-    "text": "купить винтовые сваи в перми",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/catalog/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "vintovye-svai-v-permi",
-    "text": "винтовые сваи в перми",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/catalog/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "montazh-vintovyh-svay",
-    "text": "монтаж винтовых свай",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/montage/",
-    "checkFrequency": "daily",
-    "freq": 8333
-  },
-  {
-    "id": "montazh-vintovyh-svay-tsena",
-    "text": "монтаж винтовых свай цена",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/montage/",
-    "checkFrequency": "daily",
-    "freq": 2475
-  },
-  {
     "id": "ustanovka-vintovyh-svay",
     "text": "установка винтовых свай",
     "tags": [
@@ -76,80 +38,6 @@
     "targetUrl": "https://zavodsvay.ru/montage/",
     "checkFrequency": "daily",
     "freq": 16357
-  },
-  {
-    "id": "vintovye-svai-pod-klyuch",
-    "text": "винтовые сваи под ключ",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/montage/",
-    "checkFrequency": "daily",
-    "freq": 1678
-  },
-  {
-    "id": "fundament-na-vintovyh-svayah",
-    "text": "фундамент на винтовых сваях",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "fundament-iz-vintovyh-svay",
-    "text": "фундамент из винтовых свай",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "svaynyy-fundament-tsena",
-    "text": "свайный фундамент цена",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "fundament-na-vintovyh-svayah-tsena",
-    "text": "фундамент на винтовых сваях цена",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "zabor-na-vintovyh-svayah",
-    "text": "забор на винтовых сваях",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "vintovye-stolby-dlya-zabora",
-    "text": "винтовые столбы для забора",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "banya-na-vintovyh-svayah",
-    "text": "баня на винтовых сваях",
-    "tags": [
-      "commercial"
-    ],
-    "targetUrl": "https://zavodsvay.ru/",
-    "checkFrequency": "daily",
-    "freq": 3164
   },
   {
     "id": "dom-na-vintovyh-svayah",
@@ -162,34 +50,284 @@
     "freq": 11506
   },
   {
-    "id": "naves-na-vintovyh-svayah",
-    "text": "навес на винтовых сваях",
+    "id": "montazh-vintovyh-svay",
+    "text": "монтаж винтовых свай",
     "tags": [
       "commercial"
     ],
-    "targetUrl": "https://zavodsvay.ru/",
+    "targetUrl": "https://zavodsvay.ru/montage/",
     "checkFrequency": "daily",
-    "freq": 545
+    "freq": 8333
   },
   {
-    "id": "terrasa-na-vintovyh-svayah",
-    "text": "терраса на винтовых сваях",
+    "id": "vintovye-svai-dlya-zabora",
+    "text": "винтовые сваи для забора",
     "tags": [
       "commercial"
     ],
     "targetUrl": "https://zavodsvay.ru/",
     "checkFrequency": "daily",
-    "freq": 951
+    "freq": 5673
   },
   {
-    "id": "besedka-na-vintovyh-svayah",
-    "text": "беседка на винтовых сваях",
+    "id": "vintovaya-svaya-89",
+    "text": "винтовая свая 89",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 5061
+  },
+  {
+    "id": "ustanovka-vintovyh-svay-tsena",
+    "text": "установка винтовых свай цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/montage/",
+    "checkFrequency": "daily",
+    "freq": 4779
+  },
+  {
+    "id": "zakruchivanie-vintovyh-svay",
+    "text": "закручивание винтовых свай",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/montage/",
+    "checkFrequency": "daily",
+    "freq": 4654
+  },
+  {
+    "id": "svaynyy-fundament-dlya-doma",
+    "text": "свайный фундамент для дома",
     "tags": [
       "commercial"
     ],
     "targetUrl": "https://zavodsvay.ru/",
     "checkFrequency": "daily",
-    "freq": 597
+    "freq": 4651
+  },
+  {
+    "id": "vintovaya-svaya-108",
+    "text": "винтовая свая 108",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 4511
+  },
+  {
+    "id": "vintovye-svai-76",
+    "text": "винтовые сваи 76",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 4327
+  },
+  {
+    "id": "karkasnyy-dom-na-vintovyh-svayah",
+    "text": "каркасный дом на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 3693
+  },
+  {
+    "id": "skolko-stoit-vintovaya-svaya",
+    "text": "сколько стоит винтовая свая",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 3393
+  },
+  {
+    "id": "banya-na-vintovyh-svayah",
+    "text": "баня на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 3164
+  },
+  {
+    "id": "vintovaya-svaya-57",
+    "text": "винтовая свая 57",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 2986
+  },
+  {
+    "id": "vintovye-svai-tsena-za-shtuku",
+    "text": "винтовые сваи цена за штуку",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 2813
+  },
+  {
+    "id": "montazh-vintovyh-svay-tsena",
+    "text": "монтаж винтовых свай цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/montage/",
+    "checkFrequency": "daily",
+    "freq": 2475
+  },
+  {
+    "id": "vintovye-svai-pod-dom",
+    "text": "винтовые сваи под дом",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 2449
+  },
+  {
+    "id": "stoimost-vintovoy-svai",
+    "text": "стоимость винтовой сваи",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 2199
+  },
+  {
+    "id": "vorota-na-vintovyh-svayah",
+    "text": "ворота на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 2186
+  },
+  {
+    "id": "vintovye-svai-kupit-tsena",
+    "text": "винтовые сваи купить цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 1920
+  },
+  {
+    "id": "vintovye-svai-pod-klyuch",
+    "text": "винтовые сваи под ключ",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/montage/",
+    "checkFrequency": "daily",
+    "freq": 1678
+  },
+  {
+    "id": "svaynyy-fundament-dlya-karkasnogo-doma",
+    "text": "свайный фундамент для каркасного дома",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 1476
+  },
+  {
+    "id": "kupit-svayu-vintovuyu-89",
+    "text": "купить сваю винтовую 89",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 1285
+  },
+  {
+    "id": "kupit-svayu-vintovuyu-76",
+    "text": "купить сваю винтовую 76",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 1269
+  },
+  {
+    "id": "vintovye-svai-perm",
+    "text": "винтовые сваи пермь",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 1255
+  },
+  {
+    "id": "vintovaya-svaya-76-mm",
+    "text": "винтовая свая 76 мм",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 1186
+  },
+  {
+    "id": "svai-vintovye-89h2000",
+    "text": "сваи винтовые 89х2000",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 1156
+  },
+  {
+    "id": "vintovye-svai-89-mm",
+    "text": "винтовые сваи 89 мм",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 1138
+  },
+  {
+    "id": "garazh-na-vintovyh-svayah",
+    "text": "гараж на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 1114
+  },
+  {
+    "id": "vintovye-svai-dlya-zabora-kupit",
+    "text": "винтовые сваи для забора купить",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 993
   },
   {
     "id": "pristroyka-na-vintovyh-svayah",
@@ -202,14 +340,424 @@
     "freq": 969
   },
   {
-    "id": "garazh-na-vintovyh-svayah",
-    "text": "гараж на винтовых сваях",
+    "id": "terrasa-na-vintovyh-svayah",
+    "text": "терраса на винтовых сваях",
     "tags": [
       "commercial"
     ],
     "targetUrl": "https://zavodsvay.ru/",
     "checkFrequency": "daily",
-    "freq": 1114
+    "freq": 951
+  },
+  {
+    "id": "kupit-svayu-vintovuyu-57",
+    "text": "купить сваю винтовую 57",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 905
+  },
+  {
+    "id": "kupit-vintovye-svai-108",
+    "text": "купить винтовые сваи 108",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 873
+  },
+  {
+    "id": "vintovaya-svaya-57-mm",
+    "text": "винтовая свая 57 мм",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 864
+  },
+  {
+    "id": "svaya-vintovaya-108h2500",
+    "text": "свая винтовая 108х2500",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 853
+  },
+  {
+    "id": "pristroyka-k-domu-na-vintovyh-svayah",
+    "text": "пристройка к дому на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 789
+  },
+  {
+    "id": "vintovye-svai-pod-zabor",
+    "text": "винтовые сваи под забор",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 749
+  },
+  {
+    "id": "vintovye-svai-dlya-zabora-tsena",
+    "text": "винтовые сваи для забора цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 738
+  },
+  {
+    "id": "vintovaya-svaya-108-tsena",
+    "text": "винтовая свая 108 цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 732
+  },
+  {
+    "id": "veranda-na-vintovyh-svayah",
+    "text": "веранда на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 688
+  },
+  {
+    "id": "svaya-vintovaya-89-2500",
+    "text": "свая винтовая 89 2500",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 638
+  },
+  {
+    "id": "svaya-vintovaya-89h2000-tsena",
+    "text": "свая винтовая 89х2000 цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 615
+  },
+  {
+    "id": "besedka-na-vintovyh-svayah",
+    "text": "беседка на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 597
+  },
+  {
+    "id": "vintovye-svai-108-mm",
+    "text": "винтовые сваи 108 мм",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 580
+  },
+  {
+    "id": "vintovye-svai-pod-karkasnyy-dom",
+    "text": "винтовые сваи под каркасный дом",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 574
+  },
+  {
+    "id": "kupit-vintovye-svai-ot-proizvoditelya",
+    "text": "купить винтовые сваи от производителя",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 554
+  },
+  {
+    "id": "naves-na-vintovyh-svayah",
+    "text": "навес на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 545
+  },
+  {
+    "id": "svaya-vintovaya-108h2500-tsena",
+    "text": "свая винтовая 108х2500 цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 536
+  },
+  {
+    "id": "dom-iz-brusa-na-vintovyh-svayah",
+    "text": "дом из бруса на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 492
+  },
+  {
+    "id": "vintovye-svai-57h1500",
+    "text": "винтовые сваи 57х1500",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 455
+  },
+  {
+    "id": "stroitelstvo-doma-na-vintovyh-svayah",
+    "text": "строительство дома на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 454
+  },
+  {
+    "id": "vintovye-svai-dlya-stolbov-zabora",
+    "text": "винтовые сваи для столбов забора",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 452
+  },
+  {
+    "id": "vintovye-svai-dlya-teplitsy",
+    "text": "винтовые сваи для теплицы",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 416
+  },
+  {
+    "id": "vintovye-svai-dom-6-na-6",
+    "text": "винтовые сваи дом 6 на 6",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 400
+  },
+  {
+    "id": "vintovye-svai-pod-terrasu",
+    "text": "винтовые сваи под террасу",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 343
+  },
+  {
+    "id": "derevyannyy-dom-na-vintovyh-svayah",
+    "text": "деревянный дом на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 337
+  },
+  {
+    "id": "svai-vintovye-kupit-nedorogo",
+    "text": "сваи винтовые купить недорого",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 315
+  },
+  {
+    "id": "kryltso-na-vintovyh-svayah",
+    "text": "крыльцо на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 311
+  },
+  {
+    "id": "vintovye-svai-pod-naves",
+    "text": "винтовые сваи под навес",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 258
+  },
+  {
+    "id": "penoblok-na-vintovyh-svayah",
+    "text": "пеноблок на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 233
+  },
+  {
+    "id": "gazobeton-na-vintovyh-svayah",
+    "text": "газобетон на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 220
+  },
+  {
+    "id": "vintovye-svai-deshevo-ot-proizvoditelya",
+    "text": "винтовые сваи дешево от производителя",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 155
+  },
+  {
+    "id": "dom-iz-gazobetona-na-vintovyh-svayah",
+    "text": "дом из газобетона на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 153
+  },
+  {
+    "id": "vintovye-svai-optom",
+    "text": "винтовые сваи оптом",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 101
+  },
+  {
+    "id": "pirs-na-vintovyh-svayah",
+    "text": "пирс на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 93
+  },
+  {
+    "id": "vintovye-svai-na-sklone",
+    "text": "винтовые сваи на склоне",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 85
+  },
+  {
+    "id": "dom-iz-penobloka-na-vintovyh-svayah",
+    "text": "дом из пеноблока на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 79
+  },
+  {
+    "id": "vintovye-svai-nedorogo-tsena",
+    "text": "винтовые сваи недорого цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 77
+  },
+  {
+    "id": "naves-dlya-avtomobilya-na-vintovyh-svayah",
+    "text": "навес для автомобиля на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 75
+  },
+  {
+    "id": "vintovye-svai-pod-kryltso",
+    "text": "винтовые сваи под крыльцо",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 74
+  },
+  {
+    "id": "kirpichnyy-dom-na-vintovyh-svayah",
+    "text": "кирпичный дом на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily",
+    "freq": 74
+  },
+  {
+    "id": "vintovye-svai-tseny-ot-proizvoditelya",
+    "text": "винтовые сваи цены от производителя",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily",
+    "freq": 70
   },
   {
     "id": "angar-na-vintovyh-svayah",
@@ -230,12 +778,21 @@
     "checkFrequency": "daily"
   },
   {
-    "id": "vintovye-svai-dlya-torfyanika",
-    "text": "винтовые сваи для торфяника",
+    "id": "vintovye-svai-76-mm",
+    "text": "винтовые сваи 76 мм",
     "tags": [
       "commercial"
     ],
-    "targetUrl": "https://zavodsvay.ru/",
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-svai-v-permi",
+    "text": "винтовые сваи в перми",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
     "checkFrequency": "daily"
   },
   {
@@ -248,14 +805,584 @@
     "checkFrequency": "daily"
   },
   {
-    "id": "vintovye-svai-na-sklone",
-    "text": "винтовые сваи на склоне",
+    "id": "vintovye-svai-dlya-torfyanika",
+    "text": "винтовые сваи для торфяника",
     "tags": [
       "commercial"
     ],
     "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-svai-kupit-nedorogo",
+    "text": "винтовые сваи купить недорого",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-svai-kupit-perm",
+    "text": "винтовые сваи купить пермь",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-svai-ot-proizvoditelya",
+    "text": "винтовые сваи от производителя",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-svai-ot-proizvoditelya-perm",
+    "text": "винтовые сваи от производителя пермь",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-svai-tsena-perm",
+    "text": "винтовые сваи цена пермь",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-stolby-dlya-zabora",
+    "text": "винтовые столбы для забора",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "zabor-na-vintovyh-svayah",
+    "text": "забор на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "kupit-vintovye-svai-v-permi",
+    "text": "купить винтовые сваи в перми",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "montazh-fundamenta-na-vintovyh-svayah",
+    "text": "монтаж фундамента на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "svaynyy-fundament-perm",
+    "text": "свайный фундамент пермь",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "svaynyy-fundament-tsena",
+    "text": "свайный фундамент цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "svaynyy-fundament-tsena-perm",
+    "text": "свайный фундамент цена пермь",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "svaya-vintovaya-108-perm",
+    "text": "свая винтовая 108 пермь",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "ustanovka-vintovyh-svay-perm",
+    "text": "установка винтовых свай пермь",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "fundament-iz-vintovyh-svay",
+    "text": "фундамент из винтовых свай",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "fundament-na-vintovyh-svayah",
+    "text": "фундамент на винтовых сваях",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "fundament-na-vintovyh-svayah-tsena",
+    "text": "фундамент на винтовых сваях цена",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-svai-svoimi-rukami",
+    "text": "винтовые сваи своими руками",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/tehnologiy/",
     "checkFrequency": "daily",
-    "freq": 85
+    "freq": 9664
+  },
+  {
+    "id": "svaynoe-pole",
+    "text": "свайное поле",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/raschet/",
+    "checkFrequency": "daily",
+    "freq": 7762
+  },
+  {
+    "id": "skolko-vintovyh-svay",
+    "text": "сколько винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/raschet/",
+    "checkFrequency": "daily",
+    "freq": 7037
+  },
+  {
+    "id": "svaekrut-dlya-vintovyh-svay",
+    "text": "сваекрут для винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/tehnologiy/",
+    "checkFrequency": "daily",
+    "freq": 6408
+  },
+  {
+    "id": "ogolovok-vintovoy-svai",
+    "text": "оголовок винтовой сваи",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/rostverk/",
+    "checkFrequency": "daily",
+    "freq": 4949
+  },
+  {
+    "id": "kak-zakrutit-vintovuyu-svayu",
+    "text": "как закрутить винтовую сваю",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/tehnologiy/",
+    "checkFrequency": "daily",
+    "freq": 4495
+  },
+  {
+    "id": "diametr-vintovyh-svay",
+    "text": "диаметр винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
+    "checkFrequency": "daily",
+    "freq": 4348
+  },
+  {
+    "id": "dlina-vintovyh-svay",
+    "text": "длина винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
+    "checkFrequency": "daily",
+    "freq": 3727
+  },
+  {
+    "id": "obvyazka-vintovyh-svay",
+    "text": "обвязка винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/rostverk/",
+    "checkFrequency": "daily",
+    "freq": 3595
+  },
+  {
+    "id": "luchshie-vintovye-svai",
+    "text": "лучшие винтовые сваи",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/sravnenie/",
+    "checkFrequency": "daily",
+    "freq": 3248
+  },
+  {
+    "id": "poly-na-vintovyh-svayah",
+    "text": "полы на винтовых сваях",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
+    "checkFrequency": "daily",
+    "freq": 3242
+  },
+  {
+    "id": "vintovye-svai-vruchnuyu",
+    "text": "винтовые сваи вручную",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/ruchnoy/",
+    "checkFrequency": "daily",
+    "freq": 2881
+  },
+  {
+    "id": "razmery-vintovyh-svay",
+    "text": "размеры винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
+    "checkFrequency": "daily",
+    "freq": 2817
+  },
+  {
+    "id": "pravilnye-vintovye-svai",
+    "text": "правильные винтовые сваи",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
+    "checkFrequency": "daily",
+    "freq": 2307
+  },
+  {
+    "id": "svaynyy-fundament-svoimi-rukami",
+    "text": "свайный фундамент своими руками",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/tehnologiy/",
+    "checkFrequency": "daily",
+    "freq": 2190
+  },
+  {
+    "id": "kak-zakrutit-vintovuyu-svayu-vruchnuyu",
+    "text": "как закрутить винтовую сваю вручную",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/ruchnoy/",
+    "checkFrequency": "daily",
+    "freq": 1379
+  },
+  {
+    "id": "dom-na-vintovyh-svayah-poly",
+    "text": "дом на винтовых сваях полы",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
+    "checkFrequency": "daily",
+    "freq": 1373
+  },
+  {
+    "id": "tsokol-doma-na-vintovyh-svayah",
+    "text": "цоколь дома на винтовых сваях",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
+    "checkFrequency": "daily",
+    "freq": 1237
+  },
+  {
+    "id": "rasstoyanie-mezhdu-vintovymi-svayami",
+    "text": "расстояние между винтовыми сваями",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/razmeshenie-svay/",
+    "checkFrequency": "daily",
+    "freq": 1036
+  },
+  {
+    "id": "dlya-kakih-domov-vintovye-svai",
+    "text": "для каких домов винтовые сваи",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
+    "checkFrequency": "daily",
+    "freq": 984
+  },
+  {
+    "id": "vintovye-svai-otzyvy",
+    "text": "винтовые сваи отзывы",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/otzyvy/",
+    "checkFrequency": "daily",
+    "freq": 839
+  },
+  {
+    "id": "obvyazka-svaynogo-fundamenta-dlya-karkasnogo-doma",
+    "text": "обвязка свайного фундамента для каркасного дома",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/rostverk/",
+    "checkFrequency": "daily",
+    "freq": 699
+  },
+  {
+    "id": "nesuschaya-sposobnost-vintovoy-svai",
+    "text": "несущая способность винтовой сваи",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/grunt/",
+    "checkFrequency": "daily",
+    "freq": 652
+  },
+  {
+    "id": "srok-sluzhby-vintovyh-svay",
+    "text": "срок службы винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/preimushestva/",
+    "checkFrequency": "daily",
+    "freq": 641
+  },
+  {
+    "id": "kak-vkrutit-vintovuyu-svayu-vruchnuyu",
+    "text": "как вкрутить винтовую сваю вручную",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/ruchnoy/",
+    "checkFrequency": "daily",
+    "freq": 620
+  },
+  {
+    "id": "kakie-vintovye-svai-dlya-karkasnogo-doma",
+    "text": "какие винтовые сваи для каркасного дома",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
+    "checkFrequency": "daily",
+    "freq": 582
+  },
+  {
+    "id": "podem-doma-na-vintovye-svai",
+    "text": "подъем дома на винтовые сваи",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/tehnologiy/",
+    "checkFrequency": "daily",
+    "freq": 443
+  },
+  {
+    "id": "uteplit-dom-na-vintovyh-svayah",
+    "text": "утеплить дом на винтовых сваях",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
+    "checkFrequency": "daily",
+    "freq": 391
+  },
+  {
+    "id": "kakie-vintovye-svai-dlya-zabora",
+    "text": "какие винтовые сваи для забора",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
+    "checkFrequency": "daily",
+    "freq": 376
+  },
+  {
+    "id": "podnyat-dom-na-vintovye-svai",
+    "text": "поднять дом на винтовые сваи",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/tehnologiy/",
+    "checkFrequency": "daily",
+    "freq": 346
+  },
+  {
+    "id": "zabor-na-vintovyh-svayah-plyusy",
+    "text": "забор на винтовых сваях плюсы",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/preimushestva/",
+    "checkFrequency": "daily",
+    "freq": 171
+  },
+  {
+    "id": "zabor-na-vintovyh-svayah-minusy",
+    "text": "забор на винтовых сваях минусы",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/preimushestva/",
+    "checkFrequency": "daily",
+    "freq": 170
+  },
+  {
+    "id": "zabor-na-vintovyh-svayah-plyusy-i-minusy",
+    "text": "забор на винтовых сваях плюсы и минусы",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/preimushestva/",
+    "checkFrequency": "daily",
+    "freq": 170
+  },
+  {
+    "id": "kakoy-diametr-vintovyh-svay-vybrat",
+    "text": "какой диаметр винтовых свай выбрать",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
+    "checkFrequency": "daily",
+    "freq": 152
+  },
+  {
+    "id": "kak-rasschitat-kolichestvo-vintovyh-svay",
+    "text": "как рассчитать количество винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/raschet/",
+    "checkFrequency": "daily",
+    "freq": 121
+  },
+  {
+    "id": "ispytanie-vintovyh-svay",
+    "text": "испытание винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/ispytaniy/",
+    "checkFrequency": "daily",
+    "freq": 90
+  },
+  {
+    "id": "betonirovanie-vintovyh-svay",
+    "text": "бетонирование винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/beton/",
+    "checkFrequency": "daily",
+    "freq": 83
+  },
+  {
+    "id": "nesuschaya-sposobnost-vintovyh-svay-tablitsa",
+    "text": "несущая способность винтовых свай таблица",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/grunt/",
+    "checkFrequency": "daily",
+    "freq": 79
+  },
+  {
+    "id": "chto-luchshe-vintovye-svai-ili-lentochnyy-fundament",
+    "text": "что лучше винтовые сваи или ленточный фундамент",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
+    "checkFrequency": "daily",
+    "freq": 65
+  },
+  {
+    "id": "nesuschaya-sposobnost-vintovoy-svai-89",
+    "text": "несущая способность винтовой сваи 89",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/grunt/",
+    "checkFrequency": "daily",
+    "freq": 64
+  },
+  {
+    "id": "vintovye-ili-zabivnye-svai",
+    "text": "винтовые или забивные сваи",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/tehnologiy/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-svai-vsg-108-kupit",
+    "text": "винтовые сваи ВСГ-108 купить",
+    "tags": [
+      "commercial"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily"
   },
   {
     "id": "vintovye-svai-vsg-57-kupit",
@@ -285,12 +1412,12 @@
     "checkFrequency": "daily"
   },
   {
-    "id": "vintovye-svai-vsg-108-kupit",
-    "text": "винтовые сваи ВСГ-108 купить",
+    "id": "vintovye-svai-ili-lentochnyy-fundament",
+    "text": "винтовые сваи или ленточный фундамент",
     "tags": [
-      "commercial"
+      "info"
     ],
-    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "targetUrl": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
     "checkFrequency": "daily"
   },
   {
@@ -303,63 +1430,6 @@
     "checkFrequency": "daily"
   },
   {
-    "id": "kakie-vintovye-svai-vybrat",
-    "text": "какие винтовые сваи выбрать",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "kakoy-diametr-vintovyh-svay-vybrat",
-    "text": "какой диаметр винтовых свай выбрать",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
-    "checkFrequency": "daily",
-    "freq": 152
-  },
-  {
-    "id": "vintovye-svai-ili-lentochnyy-fundament",
-    "text": "винтовые сваи или ленточный фундамент",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "chto-luchshe-vintovye-svai-ili-lentochnyy-fundament",
-    "text": "что лучше винтовые сваи или ленточный фундамент",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/stroitelstvo-fundamenta/",
-    "checkFrequency": "daily",
-    "freq": 65
-  },
-  {
-    "id": "vintovye-ili-zabivnye-svai",
-    "text": "винтовые или забивные сваи",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/tehnologiy/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "srok-sluzhby-vintovyh-svay",
-    "text": "срок службы винтовых свай",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/preimushestva/",
-    "checkFrequency": "daily",
-    "freq": 641
-  },
-  {
     "id": "garantiya-na-vintovye-svai",
     "text": "гарантия на винтовые сваи",
     "tags": [
@@ -369,70 +1439,12 @@
     "checkFrequency": "daily"
   },
   {
-    "id": "kak-rasschitat-kolichestvo-vintovyh-svay",
-    "text": "как рассчитать количество винтовых свай",
+    "id": "kakie-vintovye-svai-vybrat",
+    "text": "какие винтовые сваи выбрать",
     "tags": [
       "info"
     ],
-    "targetUrl": "https://zavodsvay.ru/articles/raschet/",
-    "checkFrequency": "daily",
-    "freq": 121
-  },
-  {
-    "id": "ustanovka-vintovyh-svay-zimoy",
-    "text": "установка винтовых свай зимой",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/zima/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "ispytanie-vintovyh-svay",
-    "text": "испытание винтовых свай",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/ispytaniy/",
-    "checkFrequency": "daily",
-    "freq": 90
-  },
-  {
-    "id": "probnoe-vkruchivanie-vintovyh-svay",
-    "text": "пробное вкручивание винтовых свай",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/probnoe/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "rasstoyanie-mezhdu-vintovymi-svayami",
-    "text": "расстояние между винтовыми сваями",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/razmeshenie-svay/",
-    "checkFrequency": "daily",
-    "freq": 1036
-  },
-  {
-    "id": "obvyazka-vintovyh-svay",
-    "text": "обвязка винтовых свай",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/rostverk/",
-    "checkFrequency": "daily",
-    "freq": 3595
-  },
-  {
-    "id": "rostverk-na-vintovyh-svayah",
-    "text": "ростверк на винтовых сваях",
-    "tags": [
-      "info"
-    ],
-    "targetUrl": "https://zavodsvay.ru/articles/rostverk/",
+    "targetUrl": "https://zavodsvay.ru/articles/vidy/",
     "checkFrequency": "daily"
   },
   {
@@ -445,6 +1457,33 @@
     "checkFrequency": "daily"
   },
   {
+    "id": "probnoe-vkruchivanie-vintovyh-svay",
+    "text": "пробное вкручивание винтовых свай",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/probnoe/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "rostverk-na-vintovyh-svayah",
+    "text": "ростверк на винтовых сваях",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/rostverk/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "skolko-nuzhno-vintovyh-svay-na-dom",
+    "text": "сколько нужно винтовых свай на дом",
+    "tags": [
+      "info"
+    ],
+    "targetUrl": "https://zavodsvay.ru/articles/raschet/",
+    "checkFrequency": "daily"
+  },
+  {
     "id": "skolko-stoyat-vintovye-svai",
     "text": "сколько стоят винтовые сваи",
     "tags": [
@@ -454,14 +1493,42 @@
     "checkFrequency": "daily"
   },
   {
-    "id": "vintovye-svai-otzyvy",
-    "text": "винтовые сваи отзывы",
+    "id": "ustanovka-vintovyh-svay-zimoy",
+    "text": "установка винтовых свай зимой",
     "tags": [
       "info"
     ],
-    "targetUrl": "https://zavodsvay.ru/articles/otzyvy/",
+    "targetUrl": "https://zavodsvay.ru/articles/zima/",
+    "checkFrequency": "daily"
+  },
+  {
+    "id": "vintovye-svai-perm-tsena",
+    "text": "винтовые сваи пермь цена",
+    "tags": [
+      "local"
+    ],
+    "targetUrl": "https://zavodsvay.ru/prices/",
     "checkFrequency": "daily",
-    "freq": 839
+    "freq": 264
+  },
+  {
+    "id": "vintovye-svai-perm-tsena-s-ustanovkoy",
+    "text": "винтовые сваи пермь цена с установкой",
+    "tags": [
+      "local"
+    ],
+    "targetUrl": "https://zavodsvay.ru/montage/",
+    "checkFrequency": "daily",
+    "freq": 66
+  },
+  {
+    "id": "vintovye-svai-permskiy-kray",
+    "text": "винтовые сваи пермский край",
+    "tags": [
+      "local"
+    ],
+    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "checkFrequency": "daily"
   },
   {
     "id": "zavod-vintovyh-svay-perm",
@@ -482,12 +1549,12 @@
     "checkFrequency": "daily"
   },
   {
-    "id": "vintovye-svai-permskiy-kray",
-    "text": "винтовые сваи пермский край",
+    "id": "montazh-vintovyh-svay-perm",
+    "text": "монтаж винтовых свай пермь",
     "tags": [
       "local"
     ],
-    "targetUrl": "https://zavodsvay.ru/catalog/",
+    "targetUrl": "https://zavodsvay.ru/montage/",
     "checkFrequency": "daily"
   },
   {
@@ -497,15 +1564,6 @@
       "local"
     ],
     "targetUrl": "https://zavodsvay.ru/",
-    "checkFrequency": "daily"
-  },
-  {
-    "id": "montazh-vintovyh-svay-perm",
-    "text": "монтаж винтовых свай пермь",
-    "tags": [
-      "local"
-    ],
-    "targetUrl": "https://zavodsvay.ru/montage/",
     "checkFrequency": "daily"
   }
 ]
