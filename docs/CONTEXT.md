@@ -6,11 +6,12 @@
 | Компонент | Статус | Версия/Заметка |
 |-----------|--------|----------------|
 | Структура проекта | создана | data/wordstat, data/core, audits, scripts, docs |
-| Wordstat-выгрузки | загружены | top_queries (2000 запросов, ядро «винтовые сваи», 04.07–04.08.2026, все регионы) + similar_queries (15, ядро «свайный фундамент»), копия 2026-08-05 |
-| Семантическое ядро | перенесено | `data/core/core.csv` — из Zavodsvay-Static `docs/SEO-keywords.csv` (55 запросов, без частот) |
+| Wordstat-выгрузки | загружены | top_queries (2000 запросов, ядро «винтовые сваи», 04.07–04.08.2026, все регионы) + similar_queries (15, ядро «свайный фундамент»), копия 2026-08-05; merged-файл 2015 запросов |
+| Семантическое ядро | обогащено | `data/core/core.csv` — 54 запроса, 23 с частотностью Wordstat |
+| Скрипты | работают | normalize_wordstat.py (обогащение частот), gen_serpwatcher.py (генератор JSON для SerpWatcher, 54 запроса) |
 | Аудиты | не начаты | первый снимок — в плане |
-| Связь с SerpWatcher | есть | 62 запроса в мониторинге (11 старых + 51 из ядра), генерация скриптом — TODO |
-| GitHub | не создан | `gh repo create` — в плане |
+| Связь с SerpWatcher | есть | 62 запроса в мониторинге; генератор выдаёт `data/core/serpwatcher_zavodsvay.json` — мерж в projects.json ещё не выполнен |
+| GitHub | создан | https://github.com/AlexanderKuzikov/SEO-Zavodsvay, main, запушен |
 
 ## Open-проблемы
 | # | Priority | Описание |
@@ -22,7 +23,8 @@
 ## Журнал работ
 | Дата | Изменение |
 |------|-----------|
-| 2026-08-05 | Создание проекта: структура, README, AGENTS.md, CONTEXT/DECISIONS. Перенесены выгрузки Wordstat (2 файла) и ядро из Zavodsvay-Static. ADR-001: границы проекта |
+| 2026-08-05 | Создание проекта: структура, README, AGENTS.md, CONTEXT/DECISIONS. Перенесены выгрузки Wordstat (2 файла) и ядро из Zavodsvay-Static. ADR-001: границы проекта. ADR-002: формат ядра |
+| 2026-08-05 | Скрипты + обогащение: normalize_wordstat.py (merged 2015 запросов, частоты в core.csv — 23/54 совпали), gen_serpwatcher.py (54 запроса → serpwatcher_zavodsvay.json). GitHub-репозиторий создан, запушено |
 
 ## Структура проекта
 ```
